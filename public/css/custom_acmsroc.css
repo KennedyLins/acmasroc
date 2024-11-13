@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #939da1;
+    --primary-color-rgb: 147,157,161;
+    --primary-color-dark:  #54636b;
+    --primary-color-rgb-dark: 84,88,107;
+    --primary-color-light:  #adb4b7;
+    --primary-color-rgb-light: 173,180,183;
+    --terceary-color: #EEEEEE;
+}
+
+.logo{
+    width: 150px;
+}
+
+.btn-custom2 {
+    background: var(--primary-color-light);
+    color: var(--terceary-color);
+}
+
+header .logo-2{
+    width: 150px;
+}
+
+header.smaller {
+    background: rgb(167,177,181);
+    position: fixed;
+    top: 0px;
+    padding: 0;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
+    -moz-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
+    box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
+    border: 0;
+}
+
+footer{
+    background: #f1f1f1;
+    color: black;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: rgba(var(--primary-color) .8);
+}
+
+footer address span a {
+    color: var(--primary-color);
+}
+
+footer address span a:hover {
+    color: rgba(var(--primary-color), .8) !important;
+}
+
+footer > div > div > div > h5 {
+    color: black !important;
+}
+
+footer > div > div > div > div > h5 {
+    color: black !important;
+}
+
+.ul-style-2 li:before, .ul-style-2 li:after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    margin-right: 15px;
+    background: #f1f1f1;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.subfooter{
+    background-color: var(--terceary-color);
+}
+
+.subfooter > .container > div > div > a{
+    color: var(--primary-color);
+}
+.subfooter > .container > div > div > a:hover{
+    color: var(--primary-color-light);
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.select-selected {
+    background-color: transparent;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    background-color: var(--terceary-color);
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: none;
+    z-index: 9999 !important;
+}
+
+.select-options.active {
+    display: block;
+}
+
+.select-options div {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.select-options div:hover {
+    background-color: transparent;
+}
+
+#topbar {
+    pos-top: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 30px;
+    overflow: visible;
+    top: 0;
+    background: var(--secondary-color);
+}
+address.s1 span {
+    display: flex;
+}
+
+
+.h-phone i {
+    display: inline-block;
+    position: absolute;
+    font-size: 16px;
+    left: 18px;
+    top: 8px;
+}
+
+.text-responsive {
+    word-wrap: break-word; /* Permite que o texto quebre em várias linhas */
+    max-width: 100%; /* Evita que o texto estenda a div além de 100% da largura */
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.feature-box.f-boxed {
+    padding: 25px;
+    color: black;
+}
+
+.feature-box.f-boxed:hover {
+    padding: 25px;
+    color: black;
+    background: #f8f8f8 !important;
+}
+.feature-box.f-boxed:hover h4 {
+    color: black;
+}
+/* Estilos para a primeira div */
+.gradient-1 {
+    background-color: #adb4b7 !important; /* Cor inicial mais clara */
+}
+
+/* Estilos para a segunda div */
+.gradient-2 {
+    background-color: #a7aeb1 !important;
+}
+
+/* Estilos para a terceira div */
+.gradient-3 {
+    background-color: #a1a8ab !important;
+}
+
+/* Estilos para a quarta div */
+.gradient-4 {
+    background-color: #9ba2a5 !important;
+}
+
+/* Estilos para a quinta div */
+.gradient-5 {
+    background-color: #959c9f !important; /* Cor final mais escura */
+}
+
+a.btn-custom, a.btn-custom:active, a.btn-custom:focus, a.btn-custom:visited, .btn-custom {
+    color: #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    outline: 0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 11px 20px;
+    min-width: 120px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+ul.traco {
+    list-style-type: none; /* Remove os pontos padrão da lista */
+}
+
+ul.traco li::before {
+    content: "-"; /* Adiciona um hífen antes de cada item da lista */
+    margin-right: 5px; /* Espaço entre o hífen e o texto */
+}
+
+.dcg-four:hover .dcg-content {
+    opacity: 1;
+    background-color: rgba(254,254,254,.5);
+}
+
+.dcg-content > ul{
+    position: absolute;
+    bottom: 0px;
+    padding-right: 2rem;
+}
+
+.mint{
+    min-height: 276px;
+}
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .arf-sm-none{
+        display: none !important;
+    }
+}
+
+/*`md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*`lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*`xl` applies to large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+
+}
+
+/* Estilos para telas com largura entre 1199px e 1280px */
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+    .arf-hide{
+        display: none;
+    }
+}
