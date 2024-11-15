@@ -188,7 +188,7 @@
                             <!-- mainmenu begin -->
                             <ul id="mainmenu">
 
-                                <li><a href="{{  route('site.home') }}#legado" @if(Route::is('site.home')) style="color:#4e4343cf;" @endif >Quem somos</a>
+                                <li><a href="{{  route('site.home') }}#legado" @if(Route::is('site.home*')) style="color:#4e4343cf;" @endif >Quem somos</a>
                                     {{-- <ul>
                                         <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
                                         <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>
@@ -197,22 +197,22 @@
                                         <li><a href="#">Responsabilidade social</a></li>
                                     </ul> --}}
                                     <ul>
-                                        <li data-target="pills-proposito"><a href="{{  route('site.valores') }}#excelencia" @if(Route::is('site.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
-                                        <li data-target="pills-valores"><a href="{{  route('site.proposito') }}#excelencia" @if(Route::is('site.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
-                                        <li ><a href="{{  route('site.transparencia')  }}" @if(Route::is('site.transparencia')) style="color:#EEEEEE; background-color:#54636b;" @endif>Relatório de transparência</a></li>
-                                        <li><a href="{{  route('site.codigo')  }}" @if(Route::is('site.codigo')) style="color:#EEEEEE; background-color:#54636b;" @endif>Código de conduta</a></li>
-                                        <li><a href="{{  route('site.responsibilidade')  }}" @if(Route::is('site.responsibilidade')) style="color:#EEEEEE; background-color:#54636b;" @endif>Responsabilidade social</a></li>
+                                        <li data-target="pills-proposito"><a href="{{  route('site.home.valores') }}#excelencia" @if(Route::is('site.home.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
+                                        <li data-target="pills-valores"><a href="{{  route('site.home.proposito') }}#excelencia" @if(Route::is('site.home.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
+                                        <li ><a href="{{  route('site.home.transparencia')  }}" @if(Route::is('site.home.transparencia')) style="color:#EEEEEE; background-color:#54636b;" @endif >Relatório de transparência</a></li>
+                                        <li><a href="{{  route('site.home.codigo')  }}" @if(Route::is('site.home.codigo')) style="color:#EEEEEE; background-color:#54636b;" @endif>Código de conduta</a></li>
+                                        <li><a href="{{  route('site.home.responsibilidade')  }}" @if(Route::is('site.home.responsibilidade')) style="color:#EEEEEE; background-color:#54636b;" @endif>Responsabilidade social</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{  url('/') }}#equipa">Equipa</a></li>
-                                <li><a href="{{  url('/') }}#servicos">Serviços</a></li>
-                                <li><a href="#">Comunicação</a>
+                                <li><a href="{{  route('site.equipa')  }}#equipa" @if(Route::is('site.equipa*')) style="color:#4e4343cf;" @endif >Equipa</a></li>
+                                <li><a href="{{  route('site.servicos')  }}#servicos" @if(Route::is('site.servicos*')) style="color:#4e4343cf;" @endif >Serviços</a></li>
+                                <li><a href="{{  route('site.comunicacao')  }}" @if(Route::is('site.comunicacao*')) style="color:#4e4343cf;" @endif>Comunicação</a>
                                     <ul>
-                                        <li><a href="#">Notícias</a></li>
-                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="{{  route('site.comunicacao.noticias')  }}" @if(Route::is('site.comunicacao.noticias')) style="color:#EEEEEE; background-color:#54636b;" @endif>Notícias</a></li>
+                                        <li><a href="{{  route('site.comunicacao.newsletter')  }}" @if(Route::is('site.comunicacao.newsletter')) style="color:#EEEEEE; background-color:#54636b;" @endif>Newsletter</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{  url('/contact') }}">Contactos</a></li>
+                                <li><a href="{{  route('site.contact')  }}" @if(Route::is('site.contact*')) style="color:#4e4343cf;" @endif >Contactos</a></li>
                             </ul>
                             <!-- mainmenu close -->
                         </div>

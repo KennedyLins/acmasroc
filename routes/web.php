@@ -4,16 +4,30 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 
 Route::get('/', [MenuController::class,'home'])->name('site.home');
-Route::get('/valores',[MenuController::class,'valores'])->name('site.valores');
-Route::get('/proposito',[MenuController::class,'proposito'])->name('site.proposito');
-Route::get('/transparencia', [MenuController::class,'transparencia'])->name('site.transparencia');
-Route::get('/codigo', [MenuController::class,'codigo'])->name('site.codigo');
-Route::get('/responsibilidade', [MenuController::class,'codigo'])->name('site.responsibilidade');
+Route::get('/valores',[MenuController::class,'valores'])->name('site.home.valores');
+Route::get('/proposito',[MenuController::class,'proposito'])->name('site.home.proposito');
+Route::get('/transparencia', [MenuController::class,'transparencia'])->name('site.home.transparencia');
+Route::get('/codigo', [MenuController::class,'codigo'])->name('site.home.codigo');
+Route::get('/responsibilidade', [MenuController::class,'codigo'])->name('site.home.responsibilidade');
 
-// Route::get('/equipa', [MenuController::class,'codigo'])->name('site.responsibilidade');
+Route::get('/equipa', [MenuController::class,'equipa'])->name('site.equipa');
 
-Route::get('/contact', function () {
-    return view('site.contact');
+Route::group(['prefix' => 'comunicacao'], function () {
+    Route::get('/', [MenuController::class,'comunicacao'])->name('site.comunicacao');
+    Route::get('/noticias', [MenuController::class,'comunicacao_noticias'])->name('site.comunicacao.noticias');
+    Route::get('/newsletter', [MenuController::class,'comunicacao_newsletter'])->name('site.comunicacao.newsletter');
 });
+
+Route::group(['prefix' => 'servicos'], function () {
+    Route::get('/', [MenuController::class,'servicos'])->name('site.servicos');
+});
+
+Route::group(['prefix' => 'contact'], function () {
+    Route::get('/', [MenuController::class,'contact'])->name('site.contact');
+});
+
+// Route::get('/contact', function () {
+//     return view('site.contact');
+// });
 
 
