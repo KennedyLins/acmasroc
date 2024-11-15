@@ -240,6 +240,9 @@
                 </div>
             </section>
 
+            @component('site.component.section.grid_photografe', ['title' => ''])
+
+            @endcomponent
 
             <section id="visao_global" style="padding: 10% 0; background: url({{asset('assets/images/visao_global.jpg')}}) center center / 80% no-repeat;" class="text-light">
                 <div class="container">
