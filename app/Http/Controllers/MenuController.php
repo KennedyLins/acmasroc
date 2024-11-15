@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Menu;
 use App\Http\Requests\StoreMenuRequest;
 use App\Http\Requests\UpdateMenuRequest;
+use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
@@ -62,5 +63,21 @@ class MenuController extends Controller
     public function destroy(Menu $menu)
     {
         //
+    }
+    public function valores(Request $request)
+    {
+        return view('site.valores');
+    }
+    public function proposito(Request $request)
+    {
+        return view('site.proposito');
+    }
+    public function transparencia(Request $request)
+    {
+        return view('site.transparencia');
+    }
+    public function codigo(Request $request)
+    {
+        return view('site.codigo');
     }
 }

@@ -197,11 +197,11 @@
                                         <li><a href="#">Responsabilidade social</a></li>
                                     </ul> --}}
                                     <ul>
-                                        <li data-target="pills-proposito"><a href="{{  url('/') }}#excelencia" class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
-                                        <li data-target="pills-valores"><a href="{{  url('/') }}#excelencia" class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
-                                        <li ><a href="{{  url('/transparencia') }}">Relatório de transparência</a></li>
-                                        <li><a href="{{  url('/codigo') }}">Código de conduta</a></li>
-                                        <li><a href="#">Responsabilidade social</a></li>
+                                        <li data-target="pills-proposito"><a href="{{  route('site.valores') }}#excelencia" @if(Route::is('site.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
+                                        <li data-target="pills-valores"><a href="{{  route('site.proposito') }}#excelencia" @if(Route::is('site.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
+                                        <li ><a href="{{  route('site.transparencia')  }}" @if(Route::is('site.transparencia')) style="color:#EEEEEE; background-color:#54636b;" @endif>Relatório de transparência</a></li>
+                                        <li><a href="{{  route('site.codigo')  }}" @if(Route::is('site.codigo')) style="color:#EEEEEE; background-color:#54636b;" @endif>Código de conduta</a></li>
+                                        <li><a href="{{  route('site.responsibilidade')  }}" @if(Route::is('site.responsibilidade')) style="color:#EEEEEE; background-color:#54636b;" @endif>Responsabilidade social</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{  url('/') }}#equipa">Equipa</a></li>
@@ -299,7 +299,7 @@
 
     <!-- Javascript Files
     ================================================== -->
-
+s
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mainmenu = document.getElementById('mainmenu');
