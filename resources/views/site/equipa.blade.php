@@ -1,19 +1,311 @@
 @extends('site.main')
 
 @section('content')
-<section id="subheader" class="jarallax text-white">
-    <img src="{{ asset('assets/images/bg-1-p&b.gif') }}" class="jarallax-img" alt="">
-    <div class="center-y relative text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1>Contacte-nos</h1>
-                    <p>Reputação. Respeito. Resultado.</p>
+<div class="no-bottom no-top" id="content">
+    <div id="top"></div>
+    <!-- section begin -->
+    <section id="subheader" class="jarallax text-black" data-bgcolor="">
+        <img src="{{asset('assets/images/equipa/fotogrupo.jpg')}}"  alt="" height="100%" width="100%">
+        <div class="center-y relative text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="spacer-single"></div>
+                        <h1>Equipa</h1>
+                        <p>Reputação. Respeito. Resultado.</p>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- section close -->
+    <section style="padding: 250px 0 90px 0;" data-bgcolor="rgb(167,177,181)" class="text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="p-title">Sócio</span><br>
+                    <h2>
+                        Armindo Costa
+                    </h2>
+                    <p>Mestre em Gestão pela Universidade do Minho;
+                        Licenciado em Auditoria pelo Iscap- Porto;
+                        Pós-graduação Avançada em Direito Fiscal – Estratégias de Planeamento Fiscal pela Universidade de Direito de Lisboa;
+                        Docente Universitário;
+                        Doutorando em Gestão pela Universidade de Vigo;</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="image-container col-md-6 pos-right" data-bgimage="url({{asset('assets/images/equipa/socios/armindo_costa.jpg')}}) center"></div>
+    </section>
+    <section style="padding: 250px 0 90px 0;" data-bgcolor="">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 offset-md-7">
+                    <span class="p-title">Sócio</span><br>
+                    <h2>
+                        Serra Cruz
+                    </h2>
+                    <p style="color: darkgrey;">Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                
+                    
+                </div>
+            </div>
+        </div>
+        <div class="image-container col-md-6" data-bgimage="url({{asset('assets/images/equipa/socios/serra_cruz.jpg')}}) center"></div>
+    </section>
+    <section style="padding: 250px 0 90px 0;" data-bgcolor="rgb(167,177,181)" class="text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="p-title">Sócia</span><br>
+                    <h2>
+                        Silvia Borges
+                    </h2>
+                    <p>Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.</p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="image-container col-md-6 pos-right" data-bgimage="url({{asset('assets/images/equipa/socios/silvia_borges.jpg')}}) center"></div>
+    </section>
+    <section style="padding: 250px 0 90px 0;" data-bgcolor="" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 offset-md-7">
+                    <span class="p-title">Sócia</span><br>
+                    <h2>
+                        Rosalia Lousano
+                    </h2>
+                    <p style="color: darkgrey;">Pós-graduada em Finanças Empresariais pela Universidade Lusíada;
+                        Licenciada em Ciências Económicas e Empresariais pela Universidade Lusíada;
+                        Mestranda em Fiscalidade (IPCA);
+                        Certificada em Relato Financeiro Internacional (ACCA);
+                        Certificada em Auditoria Internacional (ACCA);</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-container col-md-6" data-bgimage="url({{asset('assets/images/equipa/socios/rosalia_lousano.jpg')}})center"></div>
+    </section>
+    <section style="padding: 270px 0 90px 0;" data-bgcolor="rgb(167,177,181)" class="text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="p-title">Sócio</span><br>
+                    <h2>
+                        João Sousa
+                    </h2>
+                    <p>Licenciado em Economia pela Faculdade de Economia do Porto;
+                        Pós Graduado em Fiscalidade pelo IPCA;</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="image-container col-md-6 pos-right" data-bgimage="url({{asset('assets/images/equipa/socios/joao_sousa.jpg')}}) center"></div>
+    </section>
+    
+
+    <section aria-label="section"></section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" id="auditores">
+                    <h2>Nossos auditores</h2>
+                    <div class="small-border"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="({{asset('assets/images/equipa/auditores/bruno.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Bruno</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/carlos.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Carlos</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/claudio.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Claudio</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/conceicao.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Conceição</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"></div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/cristianesousa.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Cristiane Sousa</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/daniel.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Daniel</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/joao.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>João</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/joel.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Joel</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                        <div class="f-profile text-center">
+                            <div class="fp-wrap f-invert">
+                                <div class="fpw-overlay">
+                                </div>
+                                <div class="fpw-overlay-btm"></div>
+                                <img src="{{asset('assets/images/equipa/auditores/leonor.jpg')}}" class="fp-image img-fluid" alt="">
+                            </div>
+                            <h4>Leonor</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                        <div class="f-profile text-center">
+                            <div class="fp-wrap f-invert">
+                                <div class="fpw-overlay">
+                                </div>
+                                <div class="fpw-overlay-btm"></div>
+                                <img src="{{asset('assets/images/equipa/auditores/mariana.jpg')}}" class="fp-image img-fluid" alt="">
+                            </div>
+                            <h4>Mariana</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                        <div class="f-profile text-center">
+                            <div class="fp-wrap f-invert">
+                                <div class="fpw-overlay">
+                                </div>
+                                <div class="fpw-overlay-btm"></div>
+                                <img src="{{asset('assets/images/equipa/auditores/mariana_.jpg')}}" class="fp-image img-fluid" alt="">
+                            </div>
+                            <h4>Mariana</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                        <div class="f-profile text-center">
+                            <div class="fp-wrap f-invert">
+                                <div class="fpw-overlay">
+                                </div>
+                                <div class="fpw-overlay-btm"></div>
+                                <img src="{{asset('assets/images/equipa/auditores/paula.jpg')}}" class="fp-image img-fluid" alt="">
+                            </div>
+                            <h4>Paula</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/paula_cardoso.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Paula Cardoso</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/pedro.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Pedro</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/rita.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Rita</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb30 wow fadeInRight" data-wow-delay=".2s">
+                    <div class="f-profile text-center">
+                        <div class="fp-wrap f-invert">
+                            <div class="fpw-overlay">
+                            </div>
+                            <div class="fpw-overlay-btm"></div>
+                            <img src="{{asset('assets/images/equipa/auditores/sara.jpg')}}" class="fp-image img-fluid" alt="">
+                        </div>
+                        <h4>Sara</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <section aria-label="section">
     <div class="container">
