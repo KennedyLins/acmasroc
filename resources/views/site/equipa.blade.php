@@ -119,7 +119,7 @@
                             <div class="fpw-overlay">
                             </div>
                             <div class="fpw-overlay-btm"></div>
-                            <img src="({{asset('assets/images/equipa/auditores/bruno.jpg')}}" class="fp-image img-fluid" alt="">
+                            <img src="{{asset('assets/images/equipa/auditores/bruno.jpg')}}" class="fp-image img-fluid" alt="">
                         </div>
                         <h4>Bruno</h4>
                     </div>
