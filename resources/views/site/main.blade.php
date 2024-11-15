@@ -188,7 +188,7 @@
                             <!-- mainmenu begin -->
                             <ul id="mainmenu">
 
-                                <li><a href="#legado">Quem somos</a>
+                                <li><a href="{{  route('site.home') }}#legado" @if(Route::is('site.home')) style="color:#4e4343cf;" @endif >Quem somos</a>
                                     {{-- <ul>
                                         <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
                                         <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>

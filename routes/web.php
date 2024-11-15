@@ -3,10 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 
-Route::get('/', function () {
-    return view('site.home');
-});
-
+Route::get('/', [MenuController::class,'home'])->name('site.home');
 Route::get('/valores',[MenuController::class,'valores'])->name('site.valores');
 Route::get('/proposito',[MenuController::class,'proposito'])->name('site.proposito');
 Route::get('/transparencia', [MenuController::class,'transparencia'])->name('site.transparencia');

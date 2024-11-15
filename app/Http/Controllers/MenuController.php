@@ -64,6 +64,10 @@ class MenuController extends Controller
     {
         //
     }
+    public function home(Request $request)
+    {
+        return view('site.home');
+    }
     public function valores(Request $request)
     {
         return view('site.valores');
