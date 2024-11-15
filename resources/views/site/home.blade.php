@@ -19,6 +19,10 @@
                 </div>
             </section>
 
+            @component('site.component.section.container_interative', ['title' => ''])
+
+            @endcomponent
+
             <section id="legado" style="padding: 5% 0; margin: 3px 0; background-color: rgb(240, 240, 240);" class="text-light">
                 <div class="container">
                     <div class="row align-items-center">
@@ -50,7 +54,11 @@
                 </div>
             </section>
 
-            <section id="missao" style="padding: 10% 0; background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
+            @component('site.component.section.menu_header_1', ['title' => 'Meu Título'])
+
+            @endcomponent
+
+            {{-- <section id="missao" style="padding: 10% 0; background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
                 <div class="container">
                     <div class="row align-items-center">
                         <!-- Mission Text Section -->
@@ -79,9 +87,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
 
-            <section id="visao" style="padding: 150px 0; background: url({{ asset('assets/images/visao.gif') }}) center center / cover no-repeat;" class="text-light">
+            {{-- <section id="visao" style="padding: 150px 0; background: url({{ asset('assets/images/visao.gif') }}) center center / cover no-repeat;" class="text-light">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-12">
@@ -99,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
 
 
             <section id="numeros" style="padding: 250px 0 90px 0; margin: 3px 0;" data-bgcolor="" class="text-light">

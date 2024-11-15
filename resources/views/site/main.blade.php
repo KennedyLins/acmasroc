@@ -27,7 +27,7 @@
     <!-- color scheme -->
     <link id="colors" href="{{asset('assets/css/colors/scheme-01.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/coloring.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/css/custom_acmsroc.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/css/custom_acmsroc.css')}}?v={{ rand() }}" rel="stylesheet" type="text/css" />
 
     <style>
     /* Estilos gerais */
@@ -189,10 +189,17 @@
                             <ul id="mainmenu">
 
                                 <li><a href="#legado">Quem somos</a>
-                                    <ul>
+                                    {{-- <ul>
                                         <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
                                         <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>
                                         <li><a href="{{  url('/transparencia') }}">Relatório de transparência</a></li>
+                                        <li><a href="{{  url('/codigo') }}">Código de conduta</a></li>
+                                        <li><a href="#">Responsabilidade social</a></li>
+                                    </ul> --}}
+                                    <ul>
+                                        <li data-target="pills-proposito"><a href="{{  url('/') }}#excelencia" class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
+                                        <li data-target="pills-valores"><a href="{{  url('/') }}#excelencia" class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
+                                        <li ><a href="{{  url('/transparencia') }}">Relatório de transparência</a></li>
                                         <li><a href="{{  url('/codigo') }}">Código de conduta</a></li>
                                         <li><a href="#">Responsabilidade social</a></li>
                                     </ul>
@@ -297,17 +304,98 @@
         const menuBtn = document.getElementById('menu-btn');
         const mainmenu = document.getElementById('mainmenu');
 
-        // Função para abrir e fechar o menu
-        menuBtn.addEventListener('click', function () {
-            mainmenu.classList.toggle('show');
+        // // Função para abrir e fechar o menu
+        // menuBtn.addEventListener('click', function () {
+        //     mainmenu.classList.toggle('show');
+        // });
+
+        // // Função para fechar o menu ao clicar no botão de fechar ou em um link do menu
+        // mainmenu.addEventListener('click', function (event) {
+        //     if (event.target.classList.contains('close-menu-btn') || event.target.tagName === 'A') {
+        //         mainmenu.classList.remove('show');
+        //     }
+        // });
+
+    
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const tabs = document.querySelectorAll('.nav-link');
+
+            const tabContents = document.querySelectorAll('.tab-pane');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(event) {
+                    event.preventDefault(); 
+
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('show', 'active'));
+
+
+                    tab.classList.add('active'); 
+                    const targetId = tab.getAttribute('data-tab');  
+                    const targetContent = document.getElementById(targetId);
+                    targetContent.classList.add('show', 'active'); 
+                });
+            });
         });
 
-        // Função para fechar o menu ao clicar no botão de fechar ou em um link do menu
-        mainmenu.addEventListener('click', function (event) {
-            if (event.target.classList.contains('close-menu-btn') || event.target.tagName === 'A') {
-                mainmenu.classList.remove('show');
-            }
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     // Seleciona o link com base no seu href
+        //     const link = document.querySelector('a[href="{{ url('/') }}#excelencia"]');
+
+        //     // Adiciona um ouvinte de evento para o clique
+        //     link.addEventListener('click', function(event) {
+        //         event.preventDefault(); // Impede o comportamento padrão do link (como o scroll)
+                
+        //         console.log('Link "O nosso propósito" foi clicado!');
+                
+        //         // Aqui você pode adicionar qualquer lógica que deseja quando o link for clicado
+        //         // Exemplo: Mudar a classe ou manipular a URL, etc.
+                
+        //         // // Se quiser que o link leve para a seção após a ação, você pode simular o clique:
+        //         // window.location.href = link.href;  // Isto redirecionará para o link.
+        //     });
+        // });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const links = document.querySelectorAll('.ref-item');
+
+            links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+
+                    const targetIdButton = link.id;
+
+                    const tabIdItem = targetIdButton.replace('ref-', '');
+
+                    const tabId = targetIdButton.replace('ref-', '') + '-tab';
+
+                    // document.getElementById('pills-valores-tab').click();
+
+                    document.getElementById(tabId).click();
+
+                    const tabLink = document.getElementById(tabId);
+                        
+                    const targetId = link.getAttribute('href').split('#')[1]; 
+
+                    if (tabId) {
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth', 
+                                block: 'start'       
+                            });
+                            const tabLink = document.querySelector(`[data-tab="${tabIdItem}"]`);  
+                            if (tabLink) {
+                                tabLink.click();
+                            }
+                        }
+                    }
+                });
+            });
         });
+
+        
     </script>
 
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
