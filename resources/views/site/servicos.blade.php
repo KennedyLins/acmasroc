@@ -1,82 +1,151 @@
 @extends('site.main')
 
 @section('content')
-<section id="subheader" class="jarallax text-white">
-    <img src="{{ asset('assets/images/bg-1-p&b.gif') }}" class="jarallax-img" alt="">
-    <div class="center-y relative text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1>Contacte-nos</h1>
-                    <p>Reputação. Respeito. Resultado.</p>
+
+
+<div class="no-bottom no-top" id="content">
+    <div id="top"></div>
+    <section aria-label="section" class="jarallax vh-100 no-padding text-light">
+        <img src="images/background/servicos.jpg" class="jarallax-img" alt="">
+        <div class="v-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="wow fadeInUp" data-wow-delay=".4s">SOCIEDADE DE REVISORES DE CONTAS</h3>
+                        <h1 class="wow fadeInUp text-uppercase" data-wow-delay=".6s">O SEU PARCEIRO DE CONFIANÇA</h1>
+                        <div class="spacer-20"></div>
+                        <a class="btn-custom wow fadeInUp" data-wow-delay="1s" href="contact.html">Contactar</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section aria-label="section">
-    <div class="container">
-        <div class="row text-center text-md-left">
-            <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p1.jpg') }}" alt="" class="img-fluid mb-3">
-                <h3 style="color:gray">Sede</h3>
-                <address class="s1">
-                    <span><i class="id-color fa fa-map-marker fa-lg"></i> Avenida da Liberdade, Edifício dos Granjinhos, nº 432 Piso 6, Sala 41-42 | 4711-912 Braga</span>
-                    <span><i class="id-color fa fa-phone fa-lg"></i> 253 206 730</span>
-                    <span><i class="id-color fa fa-envelope-o fa-lg"></i> <a href="mailto:geral@acmsroc.pt">geral@acmsroc.pt</a></span>
-                </address>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p2.jpg') }}" alt="" class="img-fluid mb-3">
-                <h3 style="color:gray">Trofa</h3>
-                <address class="s1">
-                    <span><i class="id-color fa fa-map-marker fa-lg"></i> Rua Fernão Magalhães, nº 254, 2º, Sala 14, 4785-319 Trofa</span>
-                    <span><i class="id-color fa fa-phone fa-lg"></i> 252 400 780</span>
-                    <span><i class="id-color fa fa-envelope-o fa-lg"></i> <a href="mailto:geral.trofa@acmsroc.pt">geral.trofa@acmsroc.pt</a></span>
-                </address>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p3.jpg') }}" alt="" class="img-fluid mb-3">
-                <h3 style="color:gray">Porto</h3>
-                <address class="s1">
-                    <span><i class="id-color fa fa-map-marker fa-lg"></i> Rua Encosta do Sol, n.º 212, Hab. 2.2, Bloco D 4400-438 Canidelo, Vila Nova de Gaia</span>
-                    <span><i class="id-color fa fa-phone fa-lg"></i> 96 692 06 98</span>
-                    <span><i class="id-color fa fa-envelope-o fa-lg"></i> <a href="mailto:joao.ribeiro@acmsroc.pt">joao.ribeiro@acmsroc.pt</a></span>
-                </address>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section aria-label="section" class="text-light" data-bgcolor="gray">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 mb-sm-30 text-center">
-                <h3>Como podemos ajudá-lo?</h3>
-                <form name="contactForm" id="contact_form" class="form-border" method="post" action="">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Nome" />
+    </section>
+    <section class="no-top relative text-light">
+        <div class="container">
+            <div class="row bg-color no-gutters mt-100">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.1)">
+                        <i class="icofont-letter"></i>
+                        <div class="text">
+                            <h4>Agendar reunião</h4>
+                            Iremos conhecer o cliente e o seu negócio, identificar e discutir as suas necessidades específicas.
+                        </div>
+                        <i class="wm icofont-letter"></i>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" />
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.2)">
+                        <i class="icofont-investigation"></i>
+                        <div class="text">
+                            <h4>Análise de caso</h4>
+                            Conduzimos uma análise mais aprofundada para a sua situação, envolvendo análise de documentos e requisitos.
+                        </div>
+                        <i class="wm icofont-investigation"></i>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefone" />
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.3)">
+                        <i class="icofont-hand-power"></i>
+                        <div class="text">
+                            <h4>Serviço especializado</h4>
+                            Elaboramos uma proposta, detalhando os termos da mesma para estabelecermos um acordo de prestação de serviços.
+                        </div>
+                        <i class="wm icofont-hand-power"></i>
                     </div>
-                    <div class="form-group">
-                        <textarea name="message" id="message" class="form-control" placeholder="Mensagem"></textarea>
-                    </div>
-                    <div class="spacer-half"></div>
-                    <div id="submit">
-                        <input type="submit" id="send_message" value="Enviar Formulário" class="btn btn-custom" />
-                    </div>
-                    <div id="mail_success" class="success">Sua mensagem foi enviada com sucesso.</div>
-                    <div id="mail_fail" class="error">Ocorreu um erro ao enviar sua mensagem.</div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+    <section style="background-size: cover;">
+        <div class="container" style="background-size: cover;">
+            <div class="row" style="background-size: cover;">
+                                                <div class="col-lg-4 offset-lg-2 col-md-6 mb30" style="background-size: cover;">
+                                        <div class="de-card-poster" style="background-size: cover;">
+                            <a class="d-overlay" href="auditoria.html">
+                                <div class="d-content" style="background-size: cover;">
+                                    <h3><i class="id-color "></i>Auditoria</h3>
+                                    <div class="d-text" style="background-size: cover;">
+                                        Análise de contas e documentos internos para empresas e outras entidades. A auditoria independente às finanças das empresas garante integridade e transparência.
+                                    </div>
+                                    <span href="auditoria.html" class="btn-main">Saber mais</span>
+                                </div>
+                            </a>
+                            <div class="d-image filter-sephia-30" src="images/auditoria.jpg" style="background: url(&quot;https://pixeldev02.com/storage/pf9kf24FhsnoOjFLgqNhVfMMoF8gd4uqzOYNFwiX.jpg&quot;) center center / cover;"></div>
+                        </div>
+                    </div>
+                                                <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
+                                        <div class="de-card-poster" style="background-size: cover;">
+                            <a class="d-overlay" href="fiscalidade.html">
+                                <div class="d-content" style="background-size: cover;">
+                                    <h3><i class="id-color "></i>Fiscalidade</h3>
+                                    <div class="d-text" style="background-size: cover;">
+                                        Solução ao nível do aconselhamento, de gestão de riscos, do controlo de custos, e da garantia do cumprimento das obrigações fiscais.
+                                    </div>
+                                    <span href="fiscalidade.html" class="btn-main">Saber mais</span>
+                                </div>
+                            </a>
+                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/iEs0rHDAqnyiLKndHnrCId6SNhZjvNoDdb3GW0Dn.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/iEs0rHDAqnyiLKndHnrCId6SNhZjvNoDdb3GW0Dn.jpg&quot;) center center / cover;"></div>
+                        </div>
+                    </div>
+                                                <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
+                                        <div class="de-card-poster" style="background-size: cover;">
+                            <a class="d-overlay" href="avaliacao.html">
+                                <div class="d-content" style="background-size: cover;">
+                                    <h3><i class="id-color "></i>Avaliação de empresas</h3>
+                                    <div class="d-text" style="background-size: cover;">
+                                        Apoio especializado em processos de reestruturações empresariais, tais como fusões, aquisições, entradas de ativos e outros, nas suas diversas vertentes.
+                                    </div>
+                                    <span href="avaliacao.html" class="btn-main">Saber mais</span>
+                                </div>
+                            </a>
+                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/fgqacIf4xyFPiBqiSthxmNPJAYpBU2XVpZ5ppvSb.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/fgqacIf4xyFPiBqiSthxmNPJAYpBU2XVpZ5ppvSb.jpg&quot;) center center / cover;"></div>
+                        </div>
+                    </div>
+                                                <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
+                                        <div class="de-card-poster" style="background-size: cover;">
+                            <a class="d-overlay" href="formacao.html">
+                                <div class="d-content" style="background-size: cover;">
+                                    <h3><i class="id-color "></i>Formação</h3>
+                                    <div class="d-text" style="background-size: cover;">
+                                        Num cenário de constante mudança, mantemos atualizados os profissionais da área contabilística, financeira e fiscal, em matéria contabilística e legal.
+                                    </div>
+                                    <span href="formacao.html" class="btn-main">Saber mais</span>
+                                </div>
+                            </a>
+                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/DB2ocuwXyOq67urs1gyKgpjE6gVIIWzziuTMfQzK.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/DB2ocuwXyOq67urs1gyKgpjE6gVIIWzziuTMfQzK.jpg&quot;) center center / cover;"></div>
+                        </div>
+                    </div>
+                                                <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
+                                        <div class="de-card-poster" style="background-size: cover;">
+                            <a class="d-overlay" href="consultoria.html">
+                                <div class="d-content" style="background-size: cover;">
+                                    <h3><i class="id-color "></i>Consultoria e Reporting</h3>
+                                    <div class="d-text" style="background-size: cover;">
+                                        Acompanhando as necessidades mais variadas das empresas, a ACM SROC presta serviços de apoio à gestão e análise de dados financeiros.
+                                    </div>
+                                    <span href="consultoria.html" class="btn-main">Saber mais</span>
+                                </div>
+                            </a>
+                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/oW1SVa9UHNKKJbK181fLUlX5OAE7bPrbFluWUKzb.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/oW1SVa9UHNKKJbK181fLUlX5OAE7bPrbFluWUKzb.jpg&quot;) center center / cover;"></div>
+                        </div>
+                    </div>
+                        </div>
+        </div>
+    </section>
+    <section class="pt40 pb40 bg-color text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 mb-sm-30 text-lg-start text-sm-center">
+                    <h3 class="no-bottom">Obtenha aconselhamento especializado para o seu caso.</h3>
+                </div>
+                <div class="col-md-4 text-lg-end rtl-lg-start text-sm-center">
+                    <a href="contact.html" class="btn-custom btn-black light">Pedir contação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 @endsection
