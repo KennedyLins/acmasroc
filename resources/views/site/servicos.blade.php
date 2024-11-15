@@ -6,7 +6,7 @@
 <div class="no-bottom no-top" id="content">
     <div id="top"></div>
     <section aria-label="section" class="jarallax vh-100 no-padding text-light">
-        <img src="images/background/servicos.jpg" class="jarallax-img" alt="">
+        <img src="{{asset('assets/images/background/servicos.jpg')}}" class="jarallax-img" alt="">
         <div class="v-center">
             <div class="container">
                 <div class="row align-items-center">
