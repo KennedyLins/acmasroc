@@ -25,32 +25,32 @@
             <div class="row bg-color no-gutters mt-100">
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.1)">
-                        <i class="icofont-letter"></i>
+                        <i class=""></i>
                         <div class="text">
                             <h4>Agendar reunião</h4>
                             Iremos conhecer o cliente e o seu negócio, identificar e discutir as suas necessidades específicas.
                         </div>
-                        <i class="wm icofont-letter"></i>
+                        {{-- <i class="wm icofont-letter"></i> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.2)">
-                        <i class="icofont-investigation"></i>
+                        <i class=""></i>
                         <div class="text">
                             <h4>Análise de caso</h4>
                             Conduzimos uma análise mais aprofundada para a sua situação, envolvendo análise de documentos e requisitos.
                         </div>
-                        <i class="wm icofont-investigation"></i>
+                        {{-- <i class="wm icofont-investigation"></i> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.3)">
-                        <i class="icofont-hand-power"></i>
+                        <i class=""></i>
                         <div class="text">
                             <h4>Serviço especializado</h4>
                             Elaboramos uma proposta, detalhando os termos da mesma para estabelecermos um acordo de prestação de serviços.
                         </div>
-                        <i class="wm icofont-hand-power"></i>
+                        {{-- <i class="wm icofont-hand-power"></i> --}}
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                                     <span href="auditoria.html" class="btn-main">Saber mais</span>
                                 </div>
                             </a>
-                            <div class="d-image filter-sephia-30" src="images/auditoria.jpg" style="background: url(&quot;https://pixeldev02.com/storage/pf9kf24FhsnoOjFLgqNhVfMMoF8gd4uqzOYNFwiX.jpg&quot;) center center / cover;"></div>
+                            <div class="d-image filter-sephia-30" src="{{ asset('assets/images/auditoria.jpg') }}" style="background: url({{ asset('assets/images/news/5.jpg') }}) center center / cover;"></div>
                         </div>
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
@@ -86,7 +86,7 @@
                                     <span href="fiscalidade.html" class="btn-main">Saber mais</span>
                                 </div>
                             </a>
-                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/iEs0rHDAqnyiLKndHnrCId6SNhZjvNoDdb3GW0Dn.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/iEs0rHDAqnyiLKndHnrCId6SNhZjvNoDdb3GW0Dn.jpg&quot;) center center / cover;"></div>
+                            <div class="d-image filter-sephia-30" data-bgimage="url({{ asset('assets/images/fiscalidade_bg.jpg') }}) center" style="background: url(&quot;https://pixeldev02.com/storage/iEs0rHDAqnyiLKndHnrCId6SNhZjvNoDdb3GW0Dn.jpg&quot;) center center / cover;"></div>
                         </div>
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
@@ -100,7 +100,7 @@
                                     <span href="avaliacao.html" class="btn-main">Saber mais</span>
                                 </div>
                             </a>
-                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/fgqacIf4xyFPiBqiSthxmNPJAYpBU2XVpZ5ppvSb.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/fgqacIf4xyFPiBqiSthxmNPJAYpBU2XVpZ5ppvSb.jpg&quot;) center center / cover;"></div>
+                            <div class="d-image filter-sephia-30" data-bgimage="url({{ asset('assets/images/avaliacao_bg.jpg') }}) center" style="background: url(&quot;https://pixeldev02.com/storage/fgqacIf4xyFPiBqiSthxmNPJAYpBU2XVpZ5ppvSb.jpg&quot;) center center / cover;"></div>
                         </div>
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
@@ -114,7 +114,7 @@
                                     <span href="formacao.html" class="btn-main">Saber mais</span>
                                 </div>
                             </a>
-                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/DB2ocuwXyOq67urs1gyKgpjE6gVIIWzziuTMfQzK.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/DB2ocuwXyOq67urs1gyKgpjE6gVIIWzziuTMfQzK.jpg&quot;) center center / cover;"></div>
+                            <div class="d-image filter-sephia-30" data-bgimage="url({{ asset('assets/images/formacao_bg.jpg') }}) center" style="background: url(&quot;https://pixeldev02.com/storage/DB2ocuwXyOq67urs1gyKgpjE6gVIIWzziuTMfQzK.jpg&quot;) center center / cover;"></div>
                         </div>
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
@@ -128,7 +128,7 @@
                                     <span href="consultoria.html" class="btn-main">Saber mais</span>
                                 </div>
                             </a>
-                            <div class="d-image filter-sephia-30" data-bgimage="url(https://pixeldev02.com/storage/oW1SVa9UHNKKJbK181fLUlX5OAE7bPrbFluWUKzb.jpg) center" style="background: url(&quot;https://pixeldev02.com/storage/oW1SVa9UHNKKJbK181fLUlX5OAE7bPrbFluWUKzb.jpg&quot;) center center / cover;"></div>
+                            <div class="d-image filter-sephia-30" data-bgimage="url({{ asset('assets/images/consultoria_bg.jpg') }}) center" style="background: url(&quot;https://pixeldev02.com/storage/oW1SVa9UHNKKJbK181fLUlX5OAE7bPrbFluWUKzb.jpg&quot;) center center / cover;"></div>
                         </div>
                     </div>
                         </div>
@@ -141,7 +141,7 @@
                     <h3 class="no-bottom">Obtenha aconselhamento especializado para o seu caso.</h3>
                 </div>
                 <div class="col-md-4 text-lg-end rtl-lg-start text-sm-center">
-                    <a href="contact.html" class="btn-custom btn-black light">Pedir contação</a>
+                    <a href="contact.html" class="btn-custom_inverse wow fadeInUp">Pedir contação</a>
                 </div>
             </div>
         </div>

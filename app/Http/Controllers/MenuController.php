@@ -68,6 +68,10 @@ class MenuController extends Controller
     {
         return view('site.home');
     }
+    public function quemsomos(Request $request)
+    {
+        return view('site.quemsomos');
+    }
     public function valores(Request $request)
     {
         return view('site.valores');
@@ -84,4 +88,34 @@ class MenuController extends Controller
     {
         return view('site.codigo');
     }
+
+    public function equipa(Request $request)
+    {
+        return view('site.equipa');
+    }
+    public function comunicacao(Request $request)
+    {
+        return view('site.comunicacao');
+    }
+    public function comunicacao_noticias(Request $request)
+    {
+        return view('site.noticias');
+    }
+
+    public function comunicacao_newsletter(Request $request)
+    {
+        return view('site.newsletter');
+    }
+
+    public function servicos(Request $request)
+    {
+        return view('site.servicos');
+    }
+
+    public function contact(Request $request)
+    {
+        return view('site.contact');
+    }
+
+
 }

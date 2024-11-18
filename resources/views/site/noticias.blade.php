@@ -2,12 +2,12 @@
 
 @section('content')
 <section id="subheader" class="jarallax text-white">
-    <img src="{{ asset('assets/images/bg-1-p&b.gif') }}" class="jarallax-img" alt="">
+    <img src="{{ asset('assets/images/background/subheader.jpg') }}" class="jarallax-img" alt="">
     <div class="center-y relative text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>Contacte-nos</h1>
+                    <h1>Notícias</h1>
                     <p>Reputação. Respeito. Resultado.</p>
                 </div>
             </div>
@@ -17,64 +17,131 @@
 
 <section aria-label="section">
     <div class="container">
-        <div class="row text-center text-md-left">
-            <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p1.jpg') }}" alt="" class="img-fluid mb-3">
-                <h3 style="color:gray">Sede</h3>
-                <address class="s1">
-                    <span><i class="id-color fa fa-map-marker fa-lg"></i> Avenida da Liberdade, Edifício dos Granjinhos, nº 432 Piso 6, Sala 41-42 | 4711-912 Braga</span>
-                    <span><i class="id-color fa fa-phone fa-lg"></i> 253 206 730</span>
-                    <span><i class="id-color fa fa-envelope-o fa-lg"></i> <a href="mailto:geral@acmsroc.pt">geral@acmsroc.pt</a></span>
-                </address>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb30">
+                <div class="bloglist item">
+                    <div class="post-content">
+                        <div class="date-box">
+                            <div class="m">10</div>
+                            <div class="d">NOV</div>
+                        </div>
+                        <div class="post-image">
+                            <img alt="" src="{{ asset('assets/images/news/1.jpg') }}">
+                        </div>
+                        <div class="post-text">
+                            <span class="p-tagline">Law Firm</span>
+                            <h4><a href="#">The Lawyer European Awards shortlist<span></span></a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span class="p-author">Fynley Wilkinson</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p2.jpg') }}" alt="" class="img-fluid mb-3">
-                <h3 style="color:gray">Trofa</h3>
-                <address class="s1">
-                    <span><i class="id-color fa fa-map-marker fa-lg"></i> Rua Fernão Magalhães, nº 254, 2º, Sala 14, 4785-319 Trofa</span>
-                    <span><i class="id-color fa fa-phone fa-lg"></i> 252 400 780</span>
-                    <span><i class="id-color fa fa-envelope-o fa-lg"></i> <a href="mailto:geral.trofa@acmsroc.pt">geral.trofa@acmsroc.pt</a></span>
-                </address>
+            <div class="col-lg-4 col-md-6 mb30">
+                <div class="bloglist item">
+                    <div class="post-content">
+                        <div class="date-box">
+                            <div class="m">15</div>
+                            <div class="d">NOV</div>
+                        </div>
+                        <div class="post-image">
+                            <img alt="" src="{{ asset('assets/images/news/2.jpg') }}">
+                        </div>
+                        <div class="post-text">
+                            <span class="p-tagline">Law Firm</span>
+                            <h4><a href="#">Six firms that are setting the trend<span></span></a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span class="p-author">Fynley Wilkinson</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p3.jpg') }}" alt="" class="img-fluid mb-3">
-                <h3 style="color:gray">Porto</h3>
-                <address class="s1">
-                    <span><i class="id-color fa fa-map-marker fa-lg"></i> Rua Encosta do Sol, n.º 212, Hab. 2.2, Bloco D 4400-438 Canidelo, Vila Nova de Gaia</span>
-                    <span><i class="id-color fa fa-phone fa-lg"></i> 96 692 06 98</span>
-                    <span><i class="id-color fa fa-envelope-o fa-lg"></i> <a href="mailto:joao.ribeiro@acmsroc.pt">joao.ribeiro@acmsroc.pt</a></span>
-                </address>
+            <div class="col-lg-4 col-md-6 mb30">
+                <div class="bloglist item">
+                    <div class="post-content">
+                        <div class="date-box">
+                            <div class="m">20</div>
+                            <div class="d">NOV</div>
+                        </div>
+                        <div class="post-image">
+                            <img alt="" src="{{ asset('assets/images/news/3.jpg') }}">
+                        </div>
+                        <div class="post-text">
+                            <span class="p-tagline">Law Firm</span>
+                            <h4><a href="#">When it comes to law firm mergers<span></span></a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span class="p-author">Fynley Wilkinson</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section aria-label="section" class="text-light" data-bgcolor="gray">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 mb-sm-30 text-center">
-                <h3>Como podemos ajudá-lo?</h3>
-                <form name="contactForm" id="contact_form" class="form-border" method="post" action="">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Nome" />
+            <div class="col-lg-4 col-md-6 mb30">
+                <div class="bloglist item">
+                    <div class="post-content">
+                        <div class="date-box">
+                            <div class="m">25</div>
+                            <div class="d">NOV</div>
+                        </div>
+                        <div class="post-image">
+                            <img alt="" src="{{ asset('assets/images/news/4.jpg') }}">
+                        </div>
+                        <div class="post-text">
+                            <span class="p-tagline">Law Firm</span>
+                            <h4><a href="#">How to Make the Most of Your CLE<span></span></a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span class="p-author">Fynley Wilkinson</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefone" />
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" id="message" class="form-control" placeholder="Mensagem"></textarea>
-                    </div>
-                    <div class="spacer-half"></div>
-                    <div id="submit">
-                        <input type="submit" id="send_message" value="Enviar Formulário" class="btn btn-custom" />
-                    </div>
-                    <div id="mail_success" class="success">Sua mensagem foi enviada com sucesso.</div>
-                    <div id="mail_fail" class="error">Ocorreu um erro ao enviar sua mensagem.</div>
-                </form>
+                </div>
             </div>
+            <div class="col-lg-4 col-md-6 mb30">
+                <div class="bloglist item">
+                    <div class="post-content">
+                        <div class="date-box">
+                            <div class="m">28</div>
+                            <div class="d">NOV</div>
+                        </div>
+                        <div class="post-image">
+                            <img alt="" src="{{ asset('assets/images/news/5.jpg') }}">
+                        </div>
+                        <div class="post-text">
+                            <span class="p-tagline">Law Firm</span>
+                            <h4><a href="#">The Ultimate Guide to Writing like a Lawyer<span></span></a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span class="p-author">Fynley Wilkinson</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb30">
+                <div class="bloglist item">
+                    <div class="post-content">
+                        <div class="date-box">
+                            <div class="m">30</div>
+                            <div class="d">NOV</div>
+                        </div>
+                        <div class="post-image">
+                            <img alt="" src="{{ asset('assets/images/news/5.jpg') }}">
+                        </div>
+                        <div class="post-text">
+                            <span class="p-tagline">Law Firm</span>
+                            <h4><a href="#">Should you Just Phone Your Opponent?<span></span></a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <span class="p-author">Fynley Wilkinson</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-single"></div>
+            <ul class="pagination">
+                <li><a href="#">Prev</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
         </div>
     </div>
 </section>

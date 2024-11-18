@@ -11,7 +11,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="auditoria.html" class="btn-custom btn-blacklight">Saber mais</a>
+                <a href="auditoria.html" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box pa-text f-boxed style-3 text-center gradient-2"
                 style="background-size: cover; width: 256px;">
@@ -23,7 +23,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="fiscalidade.html" class="btn-custom btn-blacklight">Saber mais</a>
+                <a href="fiscalidade.html" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box pa-text f-boxed style-3 text-center gradient-3"
                 style="background-size: cover; width: 256px;">
@@ -34,7 +34,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="avaliacao.html" class="btn-custom btn-blacklight">Saber mais</a>
+                <a href="avaliacao.html" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box pa-text f-boxed style-3 text-center gradient-4"
                 style="background-size: cover; width: 256px;">
@@ -46,7 +46,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="formacao.html" class="btn-custom btn-blacklight">Saber mais</a>
+                <a href="formacao.html" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box pa-text f-boxed style-3 text-center gradient-5"
                 style="background-size: cover; width: 256px;">
@@ -57,7 +57,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="consultoria.html" class="btn-custom btn-blacklight">Saber mais</a>
+                <a href="consultoria.html" class="btn-custom_alter">Saber mais</a>
             </div>
         </div>
     </div>

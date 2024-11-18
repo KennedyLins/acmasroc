@@ -2,13 +2,13 @@
 
 @section('content')
 <section id="subheader" class="jarallax text-white">
-    <img src="{{ asset('assets/images/bg-1-p&b.gif') }}" class="jarallax-img" alt="">
+    <img src="{{ asset('assets/images/background/subheader1.jpg') }}" class="jarallax-img" alt="">
     <div class="center-y relative text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>Contacte-nos</h1>
-                    <p>Reputação. Respeito. Resultado.</p>
+                    <h1>Newsletter</h1>
+                    <p>Mensagem. Notícia. Informação.</p>
                 </div>
             </div>
         </div>
