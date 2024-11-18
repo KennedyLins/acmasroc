@@ -230,11 +230,11 @@
     </div>
 </section>
 
-@component('site.component.section.grid_photografe', ['title' => ''])
+{{-- @component('site.component.section.grid_photografe', ['title' => ''])
 
-@endcomponent
+@endcomponent --}}
 
-<section id="visao_global" style="padding: 10% 0; background: url({{asset('assets/images/visao_global.jpg')}}) center center / 80% no-repeat;" class="text-light">
+{{-- <section id="visao_global" style="padding: 10% 0; background: url({{asset('assets/images/visao_global.jpg')}}) center center / 80% no-repeat;" class="text-light">
     <div class="container">
         <div class="row align-items-center">
             <!-- Text Section -->
@@ -256,7 +256,7 @@
             </div>
         </div>
     </div>              
-</section> 
+</section>  --}}
 
 
 <section id="visao_global2" style="padding: 10% 0; background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
