@@ -195,12 +195,22 @@
     </div>
 </section>
 
-<section id="parceiros" class="text-light" 
+{{-- <section id="parceiros" class="text-light" 
     style="padding: 20% 0; 
             background: url({{ asset('assets/images/parceiros.png') }}) center center / contain no-repeat; 
             margin: 20px 0;" 
     data-bgcolor="">
-</section>
+</section> --}}
+
+
+<div class="spacer-single" style="background-size: cover; margin-top:100px"></div>
+
+
+@component('site.component.section.carreseoul_footer', ['title' => ''])
+
+@endcomponent 
+
+
   
 <section id="equipa" style="padding: 150px 0; margin: 3px 0;" class="text-light">
     <div class="container">
@@ -257,7 +267,6 @@
         </div>
     </div>              
 </section>  --}}
-
 
 <section id="visao_global2" style="padding: 10% 0; background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
     <div class="container">

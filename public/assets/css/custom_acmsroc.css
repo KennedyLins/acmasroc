@@ -310,3 +310,19 @@ a.btn-custom_alter:active{
     background-color:#606060;
     color: (240,240,240);
 }
+.upper-text{
+    text-transform: lowercase; /* Garante que tudo comece minúsculo */
+    text-transform: capitalize;
+    list-style-type: none; /* Remove o marcador da lista */
+    letter-spacing: 2px;
+}
+
+.gray-contact{
+    background-color: rgb(167, 177, 181);
+}
+
+form.contact div.form-group input,
+form.contact div.form-group textarea {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    border: 1px solid #ccc;    /* Borda cinza clara */
+}
