@@ -54,7 +54,7 @@
         <div class="row align-items-center">
             <!-- Mission Text Section -->
             <div class="col-lg-5 col-md-6 col-sm-12 text-center text-md-start">
-                <h2 style="color:white;">A Nossa Missão</h2>
+                <h2 style="color:white;">Os Nosso Valores</h2>
                 <p style="color:white;">
                     Oferecer soluções de auditoria com excelência, assegurando transparência, conformidade e eficiência
                     nos processos empresariais, com uma visão global e estratégica que agrega valor, fortalece a confiança
@@ -85,7 +85,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <h1 class="text-white">
-                    A Nossa Visão
+                    O Nosso Propósito
                 </h1>
                 <p class="text-white">
                     Ser a referência em auditoria e consultoria, promovendo confiança, transparência e crescimento sustentável através de soluções personalizadas e excelência profissional.
@@ -151,16 +151,16 @@
         </div>
     </div>
     <div class="image-container col-md-6 pos-right" style="width: 550px; height:400px; margin:10% 0 10% 10%; background-color:rgb(167,177,181);">
-       <ul class="bg-lista-index" style="padding-top: 25px;">
-            <li class="lista-index">+ AUDITORIA</li>
-            <li class="lista-index">+ CERTIFICAÇÃO DE CONTAS</li>
-            <li class="lista-index">+ CONSULTORIA DE GESTÃO</li>
-            <li class="lista-index">+ AVALIAÇÃO DE EMPRESAS</li>
-            <li class="lista-index">+ FUSÃO E CISÃO DE EMPRESAS</li>
-            <li class="lista-index">+ TRANSFORMAÇÃO EMPRESAS</li>
-            <li class="lista-index">+ CONSOLIDAÇÃO DE CONTAS</li>
-            <li class="lista-index">+ REPORTE INTERNACIONAL</li>
-            <li class="lista-index">+ PREÇOS DE TRANSFERÊNCIA</li>
+       <ul class="bg-lista-index" style="padding-top: 35px; font-size: 22px">
+            <li class="lista-index upper-text">+ Auditoria</li>
+            <li class="lista-index upper-text">+ Certificação de contas</li>
+            <li class="lista-index upper-text">+ Consultoria de gestão</li>
+            <li class="lista-index upper-text">+ Avaliação de empresas</li>
+            <li class="lista-index upper-text">+ Fusão e cisão de empresas</li>
+            <li class="lista-index upper-text">+ Transformação empresas</li>
+            <li class="lista-index upper-text">+ Consolidação de contas</li>
+            <li class="lista-index upper-text">+ Reporte internacional</li>
+            <li class="lista-index upper-text">+ Preços de transferência</li>
        </ul>
     </div>
 </section>
@@ -169,7 +169,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <h1 style="color: dimgray; font-style: bold;">
+                <h1 style="color: dimgray; font-family: 'RotundaLight', sans-serif; font-weight: 50">
                     Parcerias Sólidas e de Longo Prazo
                 </h1>
                 <p style="color: dimgray">Contamos com clientes de referência em diversos
@@ -180,17 +180,17 @@
             </div>
         </div>
     </div>
-    <div class="image-container col-md-6 pos-right" style="width: 550px; height:450px; margin:10% 0 10% 10%; background-color:white; color:gray;">
-       <ul class="bg-lista-index" style="padding-top: 25px;">
-            <li class="lista-index">+ DISTRIBUIÇÃO</li>
-            <li class="lista-index">+ COSTRUÇÃO CIVIL</li>
-            <li class="lista-index">+ COOPERATIVAS AGRÍCULAS</li>
-            <li class="lista-index">+ VINHO DO PORTO</li>
-            <li class="lista-index">+ TRANSPORTE TERRESTRE</li>
-            <li class="lista-index">+ IMOBILIÁRIO</li>
-            <li class="lista-index">+ SAÚDE</li>
-            <li class="lista-index">+ EDUCAÇÃO</li>
-            <li class="lista-index">+ ENTIDADES PÚBLICAS</li>
+    <div class="image-container col-md-6 pos-right" style="font-family: 'RotundaLight', sans-serif; font-weight: 50; width: 550px; height:420px; margin:10% 0 10% 10%; background-color:white; color:gray;">
+       <ul class="bg-lista-index" style="padding-top: 49px; font-size: 22px">
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Distribuição</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Construção civil</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Cooperativas agrícolas</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Vinho do porto</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Transporte terrestre</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Imobiliária</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Saúde</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Educação</li>
+            <li class="lista-index upper-text" style="padding-top: 5px;">+ Entidas Públicas</li>
        </ul>
     </div>
 </section>
@@ -230,11 +230,11 @@
     </div>
 </section>
 
-@component('site.component.section.grid_photografe', ['title' => ''])
+{{-- @component('site.component.section.grid_photografe', ['title' => ''])
 
-@endcomponent
+@endcomponent --}}
 
-<section id="visao_global" style="padding: 10% 0; background: url({{asset('assets/images/visao_global.jpg')}}) center center / 80% no-repeat;" class="text-light">
+{{-- <section id="visao_global" style="padding: 10% 0; background: url({{asset('assets/images/visao_global.jpg')}}) center center / 80% no-repeat;" class="text-light">
     <div class="container">
         <div class="row align-items-center">
             <!-- Text Section -->
@@ -256,7 +256,7 @@
             </div>
         </div>
     </div>              
-</section> 
+</section>  --}}
 
 
 <section id="visao_global2" style="padding: 10% 0; background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
