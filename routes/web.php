@@ -9,7 +9,7 @@ Route::get('/valores',[MenuController::class,'valores'])->name('site.home.valore
 Route::get('/proposito',[MenuController::class,'proposito'])->name('site.home.proposito');
 Route::get('/transparencia', [MenuController::class,'transparencia'])->name('site.home.transparencia');
 Route::get('/codigo', [MenuController::class,'codigo'])->name('site.home.codigo');
-Route::get('/responsibilidade', [MenuController::class,'codigo'])->name('site.home.responsibilidade');
+Route::get('/responsibilidade', [MenuController::class,'responsabilidade'])->name('site.home.responsibilidade');
 
 Route::get('/equipa', [MenuController::class,'equipa'])->name('site.equipa');
 

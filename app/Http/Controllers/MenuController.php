@@ -89,6 +89,11 @@ class MenuController extends Controller
         return view('site.codigo');
     }
 
+    public function responsabilidade(Request $request)
+    {
+        return view('site.responsabilidade');
+    }
+
     public function equipa(Request $request)
     {
         return view('site.equipa');
