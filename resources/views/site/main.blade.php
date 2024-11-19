@@ -191,15 +191,15 @@
                                 <li><a href="{{  route('site.home.quemsomos') }}" @if(Route::is('site.home.quemsomos*')) style="color:#4e4343cf;" @endif >Quem somos</a>
 
                                     {{-- <ul>
-                                        <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
-                                        <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>
+                                        <li><a href="{{  url('/') }}#visao">O nosso propósito-kennedy</a></li>
+                                        <li><a href="{{  url('/') }}#missao">Os nossos valores</a></li>
                                         <li><a href="{{  url('/transparencia') }}">Relatório de transparência</a></li>
                                         <li><a href="{{  url('/codigo') }}">Código de conduta</a></li>
                                         <li><a href="#">Responsabilidade social</a></li>
                                     </ul> --}}
                                     <ul>
-                                        <li data-target="pills-proposito"><a href="{{  route('site.home.quemsomos') }}#missao" @if(Route::is('site.home.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
-                                        <li data-target="pills-valores"><a href="{{  route('site.home.quemsomos') }}#visao" @if(Route::is('site.home.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
+                                        <li data-target="pills-proposito"><a href="{{  route('site.home.quemsomos') }}#visao" @if(Route::is('site.home.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
+                                        <li data-target="pills-valores"><a href="{{  route('site.home.quemsomos') }}#missao" @if(Route::is('site.home.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
                                         <li ><a href="{{  route('site.home.transparencia')  }}" @if(Route::is('site.home.transparencia')) style="color:#EEEEEE; background-color:#54636b;" @endif >Relatório de transparência</a></li>
                                         <li><a href="{{  route('site.home.codigo')  }}" @if(Route::is('site.home.codigo')) style="color:#EEEEEE; background-color:#54636b;" @endif>Código de conduta</a></li>
                                         <li><a href="{{  route('site.home.responsibilidade')  }}" @if(Route::is('site.home.responsibilidade')) style="color:#EEEEEE; background-color:#54636b;" @endif>Responsabilidade social</a></li>

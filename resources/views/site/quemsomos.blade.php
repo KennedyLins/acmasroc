@@ -54,7 +54,7 @@
         <div class="row align-items-center">
             <!-- Mission Text Section -->
             <div class="col-lg-5 col-md-6 col-sm-12 text-center text-md-start">
-                <h2 style="color:white;">A Nossa Missão</h2>
+                <h2 style="color:white;">Os Nosso Valores</h2>
                 <p style="color:white;">
                     Oferecer soluções de auditoria com excelência, assegurando transparência, conformidade e eficiência
                     nos processos empresariais, com uma visão global e estratégica que agrega valor, fortalece a confiança
@@ -85,7 +85,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <h1 class="text-white">
-                    A Nossa Visão
+                    O Nosso Propósito
                 </h1>
                 <p class="text-white">
                     Ser a referência em auditoria e consultoria, promovendo confiança, transparência e crescimento sustentável através de soluções personalizadas e excelência profissional.
