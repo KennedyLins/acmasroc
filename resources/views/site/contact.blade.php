@@ -48,13 +48,13 @@
         </div>
     </div>
 </section>
-
-<section aria-label="section" class="text-light" data-bgcolor="gray">
+{{-- data-bgcolor="gray" --}}
+<section aria-label="section" class="text-light gray-contact" >
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 mb-sm-30 text-center">
                 <h3>Como podemos ajudá-lo?</h3>
-                <form name="contactForm" id="contact_form" class="form-border" method="post" action="">
+                <form name="contactForm" id="contact_form" class="form-border contact" method="post" action="">
                     <div class="form-group">
                         <input type="text" name="name" id="name" class="form-control" placeholder="Nome" />
                     </div>

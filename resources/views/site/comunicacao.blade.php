@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>Contacte-nos</h1>
+                    <h1>Comunique-se</h1>
                     <p>Reputação. Respeito. Resultado.</p>
                 </div>
             </div>

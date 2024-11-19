@@ -100,40 +100,7 @@
     </div>
 </section>
 
-<section id="numeros" style="padding: 250px 0 90px 0; margin: 3px 0;" data-bgcolor="" class="text-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center text-md-start">
-                    <h1 style="color: dimgray;">
-                    Muito Mais que Números
-                    </h1>
-                    <p style="color: dimgray;">Oferecemos muito mais do que uma análise financeira
-                        tradicional. Adotamos uma abordagem estratégica e
-                        integrada, que não se limita a rever os números, mas que
-                        compreende a fundo a saúde organizacional dos nossos
-                        clientes. Com uma visão abrangente e personalizada,
-                        ajudamos as empresas a tomar decisões informadas,
-                        promovendo a transparência e impulsionando um
-                        crescimento sustentável
-                    </p>                         
-            </div>
-            
-            <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
-                <div
-                    class="image-container position-relative overflow-hidden"
-                    style="
-                        width: 100%;
-                        height: auto;
-                        max-height: 100vh;
-                        aspect-ratio: 3 / 2;
-                        background: url({{asset('assets/images/mais_numeros.png')}}) center center / cover no-repeat;
-                    "
-                    data-bgimage="url({{asset('assets/images/mais_numeros.png')}}) center"
-                ></div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <section id="servicos" style="padding: 250px 0 90px 0; background:url({{asset('assets/images/servicos.gif')}})"  data-bgcolor="" class="text-light">
     <div class="container">
@@ -195,40 +162,22 @@
     </div>
 </section>
 
-<section id="parceiros" class="text-light" 
+{{-- <section id="parceiros" class="text-light" 
     style="padding: 20% 0; 
             background: url({{ asset('assets/images/parceiros.png') }}) center center / contain no-repeat; 
             margin: 20px 0;" 
     data-bgcolor="">
-</section>
-  
-<section id="equipa" style="padding: 150px 0; margin: 3px 0;" class="text-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center text-md-start">
-                <h1 style="color: dimgray;">
-                    A Nossa Equipa
-                </h1>
-                <p style="color: dimgray;">
-                    Temos uma equipa multidisciplinar composta por especialistas altamente qualificados, a nossa equipa alia experiência, rigor e inovação para garantir soluções eficazes e personalizadas, proporcionando confiança e resultados que impulsionam o sucesso dos nossos clientes.
-                </p>
-            </div>
+</section> --}}
 
-            <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
-                <div class="image-container position-relative overflow-hidden"
-                    style="
-                        width: 100%;
-                        height: auto;
-                        padding-top: 150%;
-                        background: url({{ asset('assets/images/equipa.png')}}) center center / cover no-repeat;
-                        border-radius: 8px;
-                    "
-                    data-bgimage="url({{ asset('assets/images/equipa.png')}}) center">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+<div class="spacer-single" style="background-size: cover; margin-top:100px"></div>
+
+
+@component('site.component.section.carreseoul_footer', ['title' => ''])
+
+@endcomponent 
+
+
 
 {{-- @component('site.component.section.grid_photografe', ['title' => ''])
 
@@ -257,7 +206,6 @@
         </div>
     </div>              
 </section>  --}}
-
 
 <section id="visao_global2" style="padding: 10% 0; background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
     <div class="container">
