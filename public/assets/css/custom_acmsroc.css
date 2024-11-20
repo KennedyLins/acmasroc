@@ -363,3 +363,47 @@ form.contact div.form-group textarea {
     
 }
 
+@media (max-width:995px){
+
+    /* .mainmenu {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff; 
+        padding: 15px;
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 60px; 
+        right: 10px; 
+        z-index: 1000;
+    }
+
+    .menu-container {
+        position: relative;
+    } */
+    /* Botão menu hamburguer */
+    /* .menu-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    } */
+    /* Submenu oculto */
+    /* .has-submenu > .submenu {
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out; 
+    }
+
+    .menu-list.show {
+        display: block;
+    }
+    
+    .has-submenu.open > .submenu {
+        display: block;
+        max-height: 300px; 
+    } */
+}
+
+.quemSomos-1{
+    background-color: #f1f1f1;
+}
