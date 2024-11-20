@@ -407,3 +407,35 @@ form.contact div.form-group textarea {
 .quemSomos-1{
     background-color: #f1f1f1;
 }
+
+.gradient-light-1 {
+    background-color: #e2e3e5 !important; /* Cor inicial mais clara */
+}
+
+/* Estilos para a segunda div */
+.gradient-light-2 {
+    background-color: #dedede!important;
+}
+
+/* Estilos para a terceira div */
+.gradient-light-3 {
+    background-color: #ced0d2 !important;
+}
+
+/* Estilos para a quarta div */
+.gradient-light-4 {
+    background-color: #bcc0c2 !important;
+}
+
+/* Estilos para a quinta div */
+.gradient-light-5 {
+    background-color: #b2b7ba  !important; /* Cor final mais escura */
+}
+
+#banner-image {
+    opacity: 1;
+    transition: opacity 3s ease-in-out; /* Define a transição de opacidade suave */
+    position: absolute; /* Garante que a imagem fique sobreposta às demais */
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do banner */
+    height: auto; /* Mantém a altura proporcional à largura */
+}

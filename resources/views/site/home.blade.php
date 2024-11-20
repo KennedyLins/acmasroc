@@ -7,7 +7,8 @@
             <div id="top"></div>
             
             <section id="inicio" aria-label="section" class="jarallax vh-100 no-padding text-light">
-                <img src="{{asset('assets/images/5_statisc.jpg')}}" class="jarallax-img" alt="">
+                @component('site.component.section.banner_interative', ['banners' => $banners, 'bannerCount' => $bannerCount])
+                @endcomponent
                 <div class="v-center">
                     <div class="container">
                         <div class="row align-items-center">

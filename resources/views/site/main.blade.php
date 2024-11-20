@@ -184,12 +184,9 @@
                         <button id="menu-btn" class="d-lg-none menu-btn"></button>
                           
                         <div class="de-flex-col header-col-mid ">
-
                             <!-- mainmenu begin -->
                             <ul id="mainmenu">
-
-                                <li><a href="{{  route('site.home.quemsomos') }}" @if(Route::is('site.home.quemsomos*')) style="color:#4e4343cf;" @endif >Quem somos</a>
-
+                                <li class="has-submenu"><a href="{{  route('site.home.quemsomos') }}" @if(Route::is('site.home.quemsomos*')) style="color:#4e4343cf;" @endif >Quem somos</a>
                                     {{-- <ul>
                                         <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
                                         <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>
@@ -197,7 +194,7 @@
                                         <li><a href="{{  url('/codigo') }}">Código de conduta</a></li>
                                         <li><a href="#">Responsabilidade social</a></li>
                                     </ul> --}}
-                                    <ul>
+                                    <ul class="submenu" >
                                         <li data-target="pills-proposito"><a href="{{  route('site.home.quemsomos') }}#missao" @if(Route::is('site.home.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
                                         <li data-target="pills-valores"><a href="{{  route('site.home.quemsomos') }}#visao" @if(Route::is('site.home.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
                                         <li ><a href="{{  route('site.home.transparencia')  }}" @if(Route::is('site.home.transparencia')) style="color:#EEEEEE; background-color:#54636b;" @endif >Relatório de transparência</a></li>
@@ -207,8 +204,8 @@
                                 </li>
                                 <li><a href="{{  route('site.equipa')  }}#equipa" @if(Route::is('site.equipa*')) style="color:#4e4343cf;" @endif >Equipa</a></li>
                                 <li><a href="{{  route('site.servicos')  }}#servicos" @if(Route::is('site.servicos*')) style="color:#4e4343cf;" @endif >Serviços</a></li>
-                                <li><a href="{{  route('site.comunicacao')  }}" @if(Route::is('site.comunicacao*')) style="color:#4e4343cf;" @endif>Comunicação</a>
-                                    <ul>
+                                <li class="has-submenu"><a href="#" @if(Route::is('site.comunicacao*')) style="color:#4e4343cf;" @endif>Comunicação</a>
+                                    <ul class="submenu">
                                         <li><a href="{{  route('site.comunicacao.noticias')  }}" @if(Route::is('site.comunicacao.noticias')) style="color:#EEEEEE; background-color:#54636b;" @endif>Notícias</a></li>
                                         <li><a href="{{  route('site.comunicacao.newsletter')  }}" @if(Route::is('site.comunicacao.newsletter')) style="color:#EEEEEE; background-color:#54636b;" @endif>Newsletter</a></li>
                                     </ul>
@@ -396,7 +393,39 @@ s
             });
         });
 
-        
+
+
+        // const mediaQuery = window.matchMedia('(max-width: 995px)');
+
+        // // Ativar/desativar comportamento com base na largura da tela
+        // function handleMenu() {
+        //     if (mediaQuery.matches) {
+        //         // Controle do menu principal
+        //         document.getElementById('menu-btn').addEventListener('click', function () {
+        //             const menu = document.getElementById('mainmenu');
+        //             menu.classList.toggle('show'); // Mostra/esconde o menu principal
+        //         });
+
+        //         // Controle dos submenus
+        //         document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
+        //             submenuLink.addEventListener('click', function (e) {
+        //                 e.preventDefault(); // Previne o redirecionamento
+        //                 const parentLi = submenuLink.parentElement;
+        //                 parentLi.classList.toggle('open'); // Mostra/esconde o submenu
+        //             });
+        //         });
+        //     }
+        // }
+
+        // handleMenu();
+
+        // mediaQuery.addEventListener('change', handleMenu);
+
+        // // Detecta o redimensionamento da janela (resize) e chama a função
+        // window.addEventListener('resize', function() {
+        //     handleMenu(); // Chama a função ao redimensionar a janela
+        // });
+                
     </script>
 
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>

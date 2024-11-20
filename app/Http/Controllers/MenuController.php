@@ -66,7 +66,29 @@ class MenuController extends Controller
     }
     public function home(Request $request)
     {
-        return view('site.home');
+        // $banner = Menu::where(1);
+
+        $banners = [
+            [
+                'title' => 'Bem-vindo ao nosso site!',
+                'subtitle' => 'Explore nossos serviços.',
+                'image' => asset('assets/images/5_statisc.jpg')
+            ],
+            [
+                'title' => 'Ofertas Imperdíveis!',
+                'subtitle' => 'Aproveite as promoções.',
+                'image' => asset('assets/images/news/1.jpg')
+            ],
+            [
+                'title' => 'Nossos Novos Produtos!',
+                'subtitle' => 'Confira o lançamento.',
+                'image' => asset('assets/images/news/2.jpg')
+            ]
+        ]; 
+
+        $bannerCount = count($banners);
+
+        return view('site.home', compact('banners', 'bannerCount'));
     }
     public function quemsomos(Request $request)
     {
