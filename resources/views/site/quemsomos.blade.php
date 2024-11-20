@@ -54,7 +54,7 @@
         <div class="row align-items-center">
             <!-- Mission Text Section -->
             <div class="col-lg-5 col-md-6 col-sm-12 text-center text-md-start">
-                <h2 style="color:white;">A Nossa Missão</h2>
+                <h2 style="color:white;">Os Nosso Valores</h2>
                 <p style="color:white;">
                     Oferecer soluções de auditoria com excelência, assegurando transparência, conformidade e eficiência
                     nos processos empresariais, com uma visão global e estratégica que agrega valor, fortalece a confiança
@@ -85,7 +85,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <h1 class="text-white">
-                    A Nossa Visão
+                    O Nosso Propósito
                 </h1>
                 <p class="text-white">
                     Ser a referência em auditoria e consultoria, promovendo confiança, transparência e crescimento sustentável através de soluções personalizadas e excelência profissional.
@@ -100,40 +100,7 @@
     </div>
 </section>
 
-<section id="numeros" style="padding: 250px 0 90px 0; margin: 3px 0;" data-bgcolor="" class="text-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center text-md-start">
-                    <h1 style="color: dimgray;">
-                    Muito Mais que Números
-                    </h1>
-                    <p style="color: dimgray;">Oferecemos muito mais do que uma análise financeira
-                        tradicional. Adotamos uma abordagem estratégica e
-                        integrada, que não se limita a rever os números, mas que
-                        compreende a fundo a saúde organizacional dos nossos
-                        clientes. Com uma visão abrangente e personalizada,
-                        ajudamos as empresas a tomar decisões informadas,
-                        promovendo a transparência e impulsionando um
-                        crescimento sustentável
-                    </p>                         
-            </div>
-            
-            <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
-                <div
-                    class="image-container position-relative overflow-hidden"
-                    style="
-                        width: 100%;
-                        height: auto;
-                        max-height: 100vh;
-                        aspect-ratio: 3 / 2;
-                        background: url({{asset('assets/images/mais_numeros.png')}}) center center / cover no-repeat;
-                    "
-                    data-bgimage="url({{asset('assets/images/mais_numeros.png')}}) center"
-                ></div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <section id="servicos" style="padding: 250px 0 90px 0; background:url({{asset('assets/images/servicos.gif')}})"  data-bgcolor="" class="text-light">
     <div class="container">
@@ -211,34 +178,6 @@
 @endcomponent 
 
 
-  
-<section id="equipa" style="padding: 150px 0; margin: 3px 0;" class="text-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center text-md-start">
-                <h1 style="color: dimgray;">
-                    A Nossa Equipa
-                </h1>
-                <p style="color: dimgray;">
-                    Temos uma equipa multidisciplinar composta por especialistas altamente qualificados, a nossa equipa alia experiência, rigor e inovação para garantir soluções eficazes e personalizadas, proporcionando confiança e resultados que impulsionam o sucesso dos nossos clientes.
-                </p>
-            </div>
-
-            <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
-                <div class="image-container position-relative overflow-hidden"
-                    style="
-                        width: 100%;
-                        height: auto;
-                        padding-top: 150%;
-                        background: url({{ asset('assets/images/equipa.png')}}) center center / cover no-repeat;
-                        border-radius: 8px;
-                    "
-                    data-bgimage="url({{ asset('assets/images/equipa.png')}}) center">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 {{-- @component('site.component.section.grid_photografe', ['title' => ''])
 

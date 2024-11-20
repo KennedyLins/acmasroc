@@ -5439,9 +5439,6 @@ footer .ul-style-2.s2 li:after{
     float: left;
 }
 
-.accordion-section-title.active:before {
-    content: "\f106";x
-}
 
 .accordion-section-title.active {
     margin-bottom: 0px;
@@ -8772,8 +8769,7 @@ a.img-icon-zoom {
     width: 100%;
 }
 
-margin:5px;
-}
+
 
 /* clear fix */
 .grid:after {
@@ -8984,7 +8980,8 @@ margin:5px;
     border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {
+    border-color: #eceff3;
 }
 
 footer .widget {
@@ -10510,7 +10507,7 @@ section.no-padding {
 .owl-arrow .next:before {
     font-family: "FontAwesome";
     content: '\f177';
-    color: #2;
+    color: 2;
     padding: 20px;
     font-size: 32px;
     display: block;
@@ -12659,7 +12656,7 @@ a.btn-slider:hover {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .testi-slider .flex-control-paging li a {
@@ -13046,7 +13043,7 @@ img {
         position: fixed;
     }
 
-    #subheader,
+    #subheader
         {
         padding: 0 0 0 0;
     }

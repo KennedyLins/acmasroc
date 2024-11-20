@@ -5440,7 +5440,7 @@ footer .ul-style-2.s2 li:after{
 }
 
 .accordion-section-title.active:before {
-    content: "\f106";x
+    content: "\f106";
 }
 
 .accordion-section-title.active {
@@ -8772,8 +8772,7 @@ a.img-icon-zoom {
     width: 100%;
 }
 
-margin:5px;
-}
+
 
 /* clear fix */
 .grid:after {
@@ -8984,9 +8983,6 @@ margin:5px;
     border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
-}
-
 footer .widget {
     border: none;
     margin-bottom: 0;
@@ -9005,7 +9001,7 @@ footer .widget_recent_post li {
     margin: 0;
     margin-bottom: 10px;
     background: none;
-    border-bottom-color: rgba(255, 255, 255, .1);
+    border-bottom-color: rgb(255, 255, 255);
 }
 
 footer .widget_recent_post li a {
