@@ -15,7 +15,6 @@
         </div>
     </div>
 </section>
-
 <section data-bgcolor="#f2f2f2">
     <div class="container">
         <div class="row align-items-center">
@@ -24,58 +23,55 @@
                 <h2 class="mb-4">Acesse os relatórios anuais</h2>
 
                 <ul class="nav nav-pills mb-3 flex-wrap" id="pills-tab" role="tablist">
-                    <!-- Define uma largura mínima para os itens para que sejam mais legíveis em telas pequenas -->
                     <li class="nav-item flex-fill text-center mb-2">
                         <a class="nav-link active" id="pills-2023-tab" data-toggle="pill" href="#pills-2023" role="tab" aria-controls="pills-2023" aria-selected="true">2023</a>
                     </li>
-                    <!-- Repetição de itens de navegação com classes de responsividade -->
                     <li class="nav-item flex-fill text-center mb-2">
                         <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2022" role="tab" aria-controls="pills-2022" aria-selected="false">2022</a>
                     </li>
                     <li class="nav-item flex-fill text-center mb-2">
-                        <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2021" role="tab" aria-controls="pills-2021" aria-selected="false">2021</a>
+                        <a class="nav-link" id="pills-2021-tab" data-toggle="pill" href="#pills-2021" role="tab" aria-controls="pills-2021" aria-selected="false">2021</a>
                     </li>
                     <li class="nav-item flex-fill text-center mb-2">
-                        <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2020" role="tab" aria-controls="pills-2020" aria-selected="false">2020</a>
+                        <a class="nav-link" id="pills-2020-tab" data-toggle="pill" href="#pills-2020" role="tab" aria-controls="pills-2020" aria-selected="false">2020</a>
                     </li>
                     <li class="nav-item flex-fill text-center mb-2">
-                        <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2019" role="tab" aria-controls="pills-2019" aria-selected="false">2019</a>
+                        <a class="nav-link" id="pills-2019-tab" data-toggle="pill" href="#pills-2019" role="tab" aria-controls="pills-2019" aria-selected="false">2019</a>
                     </li>
                     <li class="nav-item flex-fill text-center mb-2">
-                        <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2018" role="tab" aria-controls="pills-2018" aria-selected="false">2018</a>
+                        <a class="nav-link" id="pills-2018-tab" data-toggle="pill" href="#pills-2018" role="tab" aria-controls="pills-2018" aria-selected="false">2018</a>
                     </li>
                     <li class="nav-item flex-fill text-center mb-2">
-                        <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2017" role="tab" aria-controls="pills-2017" aria-selected="false">2017</a>
+                        <a class="nav-link" id="pills-2017-tab" data-toggle="pill" href="#pills-2017" role="tab" aria-controls="pills-2017" aria-selected="false">2017</a>
                     </li>
                     <li class="nav-item flex-fill text-center mb-2">
-                        <a class="nav-link" id="pills-2022-tab" data-toggle="pill" href="#pills-2016" role="tab" aria-controls="pills-2016" aria-selected="false">2016</a>
+                        <a class="nav-link" id="pills-2016-tab" data-toggle="pill" href="#pills-2016" role="tab" aria-controls="pills-2016" aria-selected="false">2016</a>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-2023" role="tabpanel" aria-labelledby="pills-2023-tab">
-                <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2023.pdf') }}">Download</a></p>
-                </div>
-
-                    <div class="tab-pane fade show " id="pills-2022" role="tabpanel" aria-labelledby="pills-2022-tab">
-                        <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2022.pdf')  }}">Download</a></p>
+                    <div class="tab-pane fade show active" id="pills-2023" role="tabpanel" aria-labelledby="pills-2023-tab">
+                        <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2023.pdf') }}">Download</a></p>
                     </div>
-                    <div class="tab-pane fade show " id="pills-2021" role="tabpanel" aria-labelledby="pills-2021-tab">
+                    <div class="tab-pane fade" id="pills-2022" role="tabpanel" aria-labelledby="pills-2022-tab">
+                        <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2022.pdf') }}">Download</a></p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-2021" role="tabpanel" aria-labelledby="pills-2021-tab">
                         <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2021.pdf') }}">Download</a></p>
                     </div>
-                    <div class="tab-pane fade show " id="pills-2020" role="tabpanel" aria-labelledby="pills-2020-tab">
+                    <div class="tab-pane fade" id="pills-2020" role="tabpanel" aria-labelledby="pills-2020-tab">
                         <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2020.pdf') }}">Download</a></p>
                     </div>
-                    <div class="tab-pane fade show " id="pills-2019" role="tabpanel" aria-labelledby="pills-2019-tab">
+                    <div class="tab-pane fade" id="pills-2019" role="tabpanel" aria-labelledby="pills-2019-tab">
                         <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2019.pdf') }}">Download</a></p>
                     </div>
-                    <div class="tab-pane fade show " id="pills-2018" role="tabpanel" aria-labelledby="pills-2018-tab">
+                    <div class="tab-pane fade" id="pills-2018" role="tabpanel" aria-labelledby="pills-2018-tab">
                         <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2018.pdf') }}">Download</a></p>
                     </div>
-                    <div class="tab-pane fade show " id="pills-2017" role="tabpanel" aria-labelledby="pills-2017-tab">
+                    <div class="tab-pane fade" id="pills-2017" role="tabpanel" aria-labelledby="pills-2017-tab">
                         <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2017.pdf') }}">Download</a></p>
                     </div>
-                    <div class="tab-pane fade show " id="pills-2016" role="tabpanel" aria-labelledby="pills-2016-tab">
+                    <div class="tab-pane fade" id="pills-2016" role="tabpanel" aria-labelledby="pills-2016-tab">
                         <p><a class="btn btn-primary btn-block btn-lg" href="{{ asset('pdf/relatorio_transparencia_2016.pdf') }}">Download</a></p>
                     </div>
                 </div>
@@ -83,6 +79,18 @@
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Ensure Bootstrap 4 tabs work correctly
+        $('#pills-tab a').on('click', function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+</script>
+
+
 
 
 @endsection
