@@ -326,3 +326,116 @@ form.contact div.form-group textarea {
     background-color: #f0f0f0; /* Cor de fundo cinza claro */
     border: 1px solid #ccc;    /* Borda cinza clara */
 }
+@media (max-width: 991px) {
+    .home-mobile {
+        display: block;
+    }
+    .home-only {
+        display: none;
+    }
+    @media (max-width: 999px) {
+
+    }
+}
+@media (min-width: 992px) {
+    .home-only {
+        display: block;
+    }
+    .home-mobile {
+        display: none;
+    }
+    .d-lg-flex .feature-box {
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        justify-content: space-between; /* Espaçamento fixo entre texto e botão */
+        height: 100%; /* Define que o bloco terá sempre a mesma altura */
+    }
+    
+    .d-lg-flex .feature-box .text {
+        flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+    }
+    
+    .d-lg-flex .feature-box a {
+        margin-top: 16px; /* Espaço fixo entre o texto e o botão */
+        display: inline-block; /* Garante que o botão respeite o margin-top */
+    }
+    
+    
+}
+
+@media (max-width:995px){
+
+    /* .mainmenu {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff; 
+        padding: 15px;
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 60px; 
+        right: 10px; 
+        z-index: 1000;
+    }
+
+    .menu-container {
+        position: relative;
+    } */
+    /* Botão menu hamburguer */
+    /* .menu-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    } */
+    /* Submenu oculto */
+    /* .has-submenu > .submenu {
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out; 
+    }
+
+    .menu-list.show {
+        display: block;
+    }
+    
+    .has-submenu.open > .submenu {
+        display: block;
+        max-height: 300px; 
+    } */
+}
+
+.quemSomos-1{
+    background-color: #f1f1f1;
+}
+
+.gradient-light-1 {
+    background-color: #e2e3e5 !important; /* Cor inicial mais clara */
+}
+
+/* Estilos para a segunda div */
+.gradient-light-2 {
+    background-color: #dedede!important;
+}
+
+/* Estilos para a terceira div */
+.gradient-light-3 {
+    background-color: #ced0d2 !important;
+}
+
+/* Estilos para a quarta div */
+.gradient-light-4 {
+    background-color: #bcc0c2 !important;
+}
+
+/* Estilos para a quinta div */
+.gradient-light-5 {
+    background-color: #b2b7ba  !important; /* Cor final mais escura */
+}
+
+#banner-image {
+    opacity: 1;
+    transition: opacity 3s ease-in-out; /* Define a transição de opacidade suave */
+    position: absolute; /* Garante que a imagem fique sobreposta às demais */
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do banner */
+    height: auto; /* Mantém a altura proporcional à largura */
+}

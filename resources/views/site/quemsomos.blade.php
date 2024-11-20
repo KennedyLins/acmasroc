@@ -132,7 +132,7 @@
     </div>
 </section>
 
-<section id="parcerias" style="padding: 250px 0 90px 0; border-top-width: 10px;"  data-bgcolor="rgb(167,177,181)" class="text-light">
+<section id="parcerias" style="padding: 250px 0 90px 0; border-top-width: 10px;" class="text-light quemSomos-1">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
