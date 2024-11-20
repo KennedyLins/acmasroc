@@ -188,8 +188,8 @@
                             <ul id="mainmenu">
                                 <li class="has-submenu"><a href="{{  route('site.home.quemsomos') }}" @if(Route::is('site.home.quemsomos*')) style="color:#4e4343cf;" @endif >Quem somos</a>
                                     {{-- <ul>
-                                        <li><a href="{{  url('/') }}#visao">O nosso propósito</a></li>
-                                        <li><a href="{{  url('/') }}#missao">Os nossos valores</a></li>
+                                        <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
+                                        <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>
                                         <li><a href="{{  url('/transparencia') }}">Relatório de transparência</a></li>
                                         <li><a href="{{  url('/codigo') }}">Código de conduta</a></li>
                                         <li><a href="#">Responsabilidade social</a></li>
