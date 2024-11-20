@@ -326,3 +326,40 @@ form.contact div.form-group textarea {
     background-color: #f0f0f0; /* Cor de fundo cinza claro */
     border: 1px solid #ccc;    /* Borda cinza clara */
 }
+@media (max-width: 991px) {
+    .home-mobile {
+        display: block;
+    }
+    .home-only {
+        display: none;
+    }
+    @media (max-width: 999px) {
+
+    }
+}
+@media (min-width: 992px) {
+    .home-only {
+        display: block;
+    }
+    .home-mobile {
+        display: none;
+    }
+    .d-lg-flex .feature-box {
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        justify-content: space-between; /* Espaçamento fixo entre texto e botão */
+        height: 100%; /* Define que o bloco terá sempre a mesma altura */
+    }
+    
+    .d-lg-flex .feature-box .text {
+        flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+    }
+    
+    .d-lg-flex .feature-box a {
+        margin-top: 16px; /* Espaço fixo entre o texto e o botão */
+        display: inline-block; /* Garante que o botão respeite o margin-top */
+    }
+    
+    
+}
+
