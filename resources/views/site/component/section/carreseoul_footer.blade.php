@@ -70,11 +70,30 @@
 
 
 </style>
+
+<section id="parcerias_longo_pz" class="jarallax text-black" data-bgcolor="">
+  <img src="{{asset('assets/images/equipa/fotogrupo.jpg')}}"  alt="" height="100%" width="100%">
+  <div class="center-y relative text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col text-center">
+                  <div class="spacer-single"></div>
+                  <h1>Parcerias Sólidas e de Longo Prazo</h1>
+                  {{-- <p>Reputação. Respeito. Resultado.</p> --}}
+              </div>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+</section>
+
 <div class="container">
   <div class="owl-carousel">
     <div class="item"><img src="{{ asset('assets/images/parceiros/parceiros_' . rand(1, 4) . '.png') }}" alt="Slide 1"></div>
     <div class="item"><img src="{{ asset('assets/images/parceiros/parceiros_' . rand(1, 4) . '.png') }}" alt="Slide 2"></div>
     <div class="item"><img src="{{ asset('assets/images/parceiros/parceiros_' . rand(1, 4) . '.png') }}" alt="Slide 3"></div>
+    <div class="item"><img src="{{ asset('assets/images/parceiros/parceiros_' . rand(1, 4) . '.png') }}" alt="Slide 4"></div>
+    <div class="item"><img src="{{ asset('assets/images/parceiros/parceiros_' . rand(1, 4) . '.png') }}" alt="Slide 5"></div>
   </div>
   <button class="custom-prev"><i class="fa fa-angle-left"></i></button>
   <button class="custom-next"><i class="fa fa-angle-right"></i></button>
@@ -83,21 +102,21 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Inicializar o Owl Carousel
+
     $('.owl-carousel').owlCarousel({
-      loop: true,              // Ativa looping infinito
-      margin: 10,              // Espaçamento entre itens
+      loop: true,             
+      margin: 10,            
       nav: false, 
       navText: [
-        '<i class="fa fa-angle-left"></i>',  // Ícone para o botão "Voltar"
-        '<i class="fa fa-angle-right"></i>' // Ícone para o botão "Avançar"
-      ],              // Adiciona botões de navegação
-      autoplay: true,          // Ativa autoplay
+        '<i class="fa fa-angle-left"></i>',  
+        '<i class="fa fa-angle-right"></i>' 
+      ],             
+      autoplay: true,         
       autoplayTimeout: 3000,   // Intervalo de 3 segundos
       responsive: {            // Configurações responsivas
         0: { items: 1 },       // 1 item para telas menores
         600: { items: 2 },     // 2 itens para telas médias
-        1000: { items: 3 }     // 3 itens para telas grandes
+        1000: { items: 5 }     // 3 itens para telas grandes
       }
     });
 
