@@ -57,6 +57,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Jost:400,200,300,500,600,700,800);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dobra+Book&display=swap');
+
+/* body {
+    font-family: 'Dobra Book', sans-serif;
+} */
 
 /* ================================================== */
 
@@ -3224,7 +3229,7 @@ h6,
 .h6,
 footer.footer-light h5 {
     margin-top: 0;
-    font-family: var(--title-font);
+    font-family: "Dobra", serif;
     font-weight: 600;
     color: var(--title-font-color);
 }
@@ -13829,4 +13834,33 @@ img {
         background-size: auto 100%;
         background-attachment: scroll;
     }
+}
+
+
+@font-face {
+    font-family: 'Dobra Book';
+    font-family: 'Dobra Book'; /* Nome da fonte */
+    src: url('/assets/fonts/novas/Dobra-Book.woff2') format('woff2'); /* Caminho público relativo */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Nova';
+    src: local('Arial Nova Regular'), local('Arial-Nova-Regular'),
+    url('../fonts/ArialNova.woff2') format('woff2'),
+    url('../fonts/ArialNova.woff') format('woff'),
+    url('../fonts/ArialNova.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* *{
+    font-family: "Arial Nova", serif;
+    /*color: var(--title-font-color-primary);*/
+/* }  */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Dobra Book", serif;
+    /*color: var(--title-font-color-primary);*/
 }

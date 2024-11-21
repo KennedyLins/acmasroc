@@ -340,8 +340,17 @@ form.contact div.form-group textarea {
 @media (min-width: 992px) {
     .home-only {
         display: block;
+        /* max-width: 1500px; */
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        /* height: 100vh;             */
+        background-size: cover;
+    }
+    .max-acm-box{
         max-width: 1500px;
     }
+
     .home-mobile {
         display: none;
     }
@@ -349,9 +358,9 @@ form.contact div.form-group textarea {
         display: flex;
         flex-direction: column; /* Alinha os elementos verticalmente */
         justify-content: space-between; /* Espaçamento fixo entre texto e botão */
-        height: 100%; /* Define que o bloco terá sempre a mesma altura */
+        /* height: 100%;  Define que o bloco terá sempre a mesma altura */
     }
-    
+
     .d-lg-flex .feature-box .text {
         flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
     }
@@ -360,6 +369,32 @@ form.contact div.form-group textarea {
         margin-top: 16px; /* Espaço fixo entre o texto e o botão */
         display: inline-block; /* Garante que o botão respeite o margin-top */
     }
+
+    .feature-box-fix {
+        width: 246px;
+        height: 291.200px;
+        overflow: hidden; 
+        position: relative; 
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+    }
+    
+    .text-responsive {
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        max-height: 4.5em; /* Ajuste a altura máxima para mostrar mais linhas */
+        line-height: 1.5em; /* Controle o espaçamento entre as linhas */
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limita a quantidade de linhas visíveis */
+        -webkit-box-orient: vertical; /* Necessário para limitar as linhas em webkit */
+    }
+    
+    .btn-custom_alter {
+        display: block;
+        margin-top: 10px;
+    }
+    
     
     
 }
@@ -440,3 +475,8 @@ form.contact div.form-group textarea {
     width: 100%; /* Faz com que a imagem ocupe 100% da largura do banner */
     height: auto; /* Mantém a altura proporcional à largura */
 }
+
+/* .feature-box-fix {
+    width: 206px;
+    height: 211.200px;
+} */
