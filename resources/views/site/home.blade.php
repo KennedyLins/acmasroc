@@ -18,7 +18,7 @@
                                 <p class="lead wow fadeInUp" data-wow-delay=".8s">Pautamos a nossa atividade pelo rigor
                                     e profissionalismo em 5 áreas de especialização na Revisão Legal de Contas.</p>
                                 <div class="spacer-20"></div>
-                                <a class="btn-custom wow fadeInUp" data-wow-delay="1s" href="contact.html">Contactar</a>
+                                <a class="btn-custom wow fadeInUp" data-wow-delay="1s" href="{{  route('site.contact')  }}">Contactar</a>
                             </div>
                         </div>
                     </div>

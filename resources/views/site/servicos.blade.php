@@ -63,7 +63,7 @@
             <div class="row" style="background-size: cover;">
                                                 <div class="col-lg-4 offset-lg-2 col-md-6 mb30" style="background-size: cover;">
                                         <div class="de-card-poster" style="background-size: cover;">
-                            <a class="d-overlay" href="auditoria.html">
+                            <a class="d-overlay" href="{{  route('site.servicos.auditoria')  }}">
                                 <div class="d-content" style="background-size: cover;">
                                     <h3><i class="id-color "></i>Auditoria</h3>
                                     <div class="d-text" style="background-size: cover;">
@@ -77,7 +77,7 @@
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
                                         <div class="de-card-poster" style="background-size: cover;">
-                            <a class="d-overlay" href="fiscalidade.html">
+                            <a class="d-overlay" href="{{  route('site.servicos.fiscalidade')  }}">
                                 <div class="d-content" style="background-size: cover;">
                                     <h3><i class="id-color "></i>Fiscalidade</h3>
                                     <div class="d-text" style="background-size: cover;">
@@ -91,7 +91,7 @@
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
                                         <div class="de-card-poster" style="background-size: cover;">
-                            <a class="d-overlay" href="avaliacao.html">
+                            <a class="d-overlay" href="{{  route('site.servicos.avaliacao')  }}">
                                 <div class="d-content" style="background-size: cover;">
                                     <h3><i class="id-color "></i>Avaliação de empresas</h3>
                                     <div class="d-text" style="background-size: cover;">
@@ -105,7 +105,7 @@
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
                                         <div class="de-card-poster" style="background-size: cover;">
-                            <a class="d-overlay" href="formacao.html">
+                            <a class="d-overlay" href="{{  route('site.servicos.formacao')  }}">
                                 <div class="d-content" style="background-size: cover;">
                                     <h3><i class="id-color "></i>Formação</h3>
                                     <div class="d-text" style="background-size: cover;">
@@ -119,7 +119,7 @@
                     </div>
                                                 <div class="col-lg-4 col-md-6 mb30" style="background-size: cover;">
                                         <div class="de-card-poster" style="background-size: cover;">
-                            <a class="d-overlay" href="consultoria.html">
+                            <a class="d-overlay" href="{{  route('site.servicos.consultoria')  }}">
                                 <div class="d-content" style="background-size: cover;">
                                     <h3><i class="id-color "></i>Consultoria e Reporting</h3>
                                     <div class="d-text" style="background-size: cover;">
@@ -141,7 +141,7 @@
                     <h3 class="no-bottom">Obtenha aconselhamento especializado para o seu caso.</h3>
                 </div>
                 <div class="col-md-4 text-lg-end rtl-lg-start text-sm-center">
-                    <a href="contact.html" class="btn-custom_inverse wow fadeInUp">Pedir contação</a>
+                    <a href="{{  route('site.contact')  }}" class="btn-custom_inverse wow fadeInUp">Pedir contação</a>
                 </div>
             </div>
         </div>
