@@ -139,6 +139,31 @@ class MenuController extends Controller
         return view('site.servicos');
     }
 
+    public function servicos_auditoria(Request $request)
+    {
+        return view('site.servicos_auditoria');
+    }
+
+    public function servicos_fiscalidade(Request $request)
+    {
+        return view('site.servicos_fiscalidade');
+    }
+
+    public function servicos_avaliacao(Request $request)
+    {
+        return view('site.servicos_avaliacao');
+    }
+
+    public function servicos_formacao(Request $request)
+    {
+        return view('site.servicos_formacao');
+    }
+
+    public function servicos_consultoria(Request $request)
+    {
+        return view('site.servicos_consultoria');
+    }
+
     public function contact(Request $request)
     {
         return view('site.contact');

@@ -19,9 +19,18 @@ Route::group(['prefix' => 'comunicacao'], function () {
     Route::get('/newsletter', [MenuController::class,'comunicacao_newsletter'])->name('site.comunicacao.newsletter');
 });
 
+
 Route::group(['prefix' => 'servicos'], function () {
     Route::get('/', [MenuController::class,'servicos'])->name('site.servicos');
+    Route::get('/auditoria', [MenuController::class,'servicos_auditoria'])->name('site.servicos.auditoria');
+    Route::get('/fiscalidade', [MenuController::class,'servicos_fiscalidade'])->name('site.servicos.fiscalidade');
+    Route::get('/avaliacao', [MenuController::class,'servicos_avaliacao'])->name('site.servicos.avaliacao');
+    Route::get('/formacao', [MenuController::class,'servicos_formacao'])->name('site.servicos.formacao');
+    Route::get('/consultoria', [MenuController::class,'servicos_consultoria'])->name('site.servicos.consultoria');
 });
+
+
+
 
 Route::group(['prefix' => 'contact'], function () {
     Route::get('/', [MenuController::class,'contact'])->name('site.contact');
