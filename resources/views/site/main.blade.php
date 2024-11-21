@@ -23,7 +23,7 @@
     <link href="{{asset('assets/css/owl.transitions.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/magnific-popup.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/jquery.countdown.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/css/style.css')}}?v={{ rand() }}" rel="stylesheet" type="text/css" />
     <!-- color scheme -->
     <link id="colors" href="{{asset('assets/css/colors/scheme-01.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/coloring.css')}}" rel="stylesheet" type="text/css" />
