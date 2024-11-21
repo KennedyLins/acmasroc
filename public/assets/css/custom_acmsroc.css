@@ -340,6 +340,7 @@ form.contact div.form-group textarea {
 @media (min-width: 992px) {
     .home-only {
         display: block;
+        max-width: 1500px;
     }
     .home-mobile {
         display: none;
