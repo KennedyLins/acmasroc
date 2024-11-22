@@ -118,6 +118,11 @@ class MenuController extends Controller
 
     public function equipa(Request $request)
     {
+        return view('site.equipa');
+    }
+
+    public function equipa2(Request $request)
+    {
         return view('site.equipa_old');
     }
    

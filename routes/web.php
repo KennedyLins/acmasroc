@@ -12,6 +12,7 @@ Route::get('/codigo', [MenuController::class,'codigo'])->name('site.home.codigo'
 Route::get('/responsibilidade', [MenuController::class,'responsabilidade'])->name('site.home.responsibilidade');
 
 Route::get('/equipa', [MenuController::class,'equipa'])->name('site.equipa');
+Route::get('/equipa2', [MenuController::class,'equipa2'])->name('site.equipa2');
 
 Route::group(['prefix' => 'comunicacao'], function () {
     //Route::get('/', [MenuController::class,'comunicacao'])->name('site.comunicacao');
