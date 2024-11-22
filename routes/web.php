@@ -14,7 +14,7 @@ Route::get('/responsibilidade', [MenuController::class,'responsabilidade'])->nam
 Route::get('/equipa', [MenuController::class,'equipa'])->name('site.equipa');
 
 Route::group(['prefix' => 'comunicacao'], function () {
-    Route::get('/', [MenuController::class,'comunicacao'])->name('site.comunicacao');
+    //Route::get('/', [MenuController::class,'comunicacao'])->name('site.comunicacao');
     Route::get('/noticias', [MenuController::class,'comunicacao_noticias'])->name('site.comunicacao.noticias');
     Route::get('/newsletter', [MenuController::class,'comunicacao_newsletter'])->name('site.comunicacao.newsletter');
 });

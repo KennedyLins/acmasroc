@@ -120,10 +120,7 @@ class MenuController extends Controller
     {
         return view('site.equipa');
     }
-    public function comunicacao(Request $request)
-    {
-        return view('site.comunicacao');
-    }
+   
     public function comunicacao_noticias(Request $request)
     {
         return view('site.noticias');

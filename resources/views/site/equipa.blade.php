@@ -1,6 +1,22 @@
 @extends('site.main')
 
 @section('content')
+
+<section id="subheader" class="jarallax text-white">
+    <img src="{{ asset('assets/images/equipa_main.webp') }}" class="jarallax-img" alt="">
+    <div class="center-y relative text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8 text-center">
+                    <h1 class="display-4"></h1>
+                    <p class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <div class="no-bottom no-top" id="content">
     <div id="top"></div>
     <!-- section begin -->
@@ -35,7 +51,7 @@
 
 
     
-    <section id="numeros" style="padding: 250px 0 90px 0; margin: 3px 0;" data-bgcolor="" class="text-light">
+<section id="numeros" style="padding: 250px 0 90px 0; margin: 3px 0;" data-bgcolor="" class="text-light">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center text-md-start">

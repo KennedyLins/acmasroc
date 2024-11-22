@@ -14,7 +14,7 @@
                         <h3 class="wow fadeInUp" data-wow-delay=".4s">SOCIEDADE DE REVISORES DE CONTAS</h3>
                         <h1 class="wow fadeInUp text-uppercase" data-wow-delay=".6s">O SEU PARCEIRO DE CONFIANÇA</h1>
                         <div class="spacer-20"></div>
-                        <a class="btn-custom wow fadeInUp" data-wow-delay="1s" href="contact.html">Contactar</a>
+                        <a class="btn-custom wow fadeInUp" data-wow-delay="1s" href="{{  route('site.contact')  }}">Contactar</a>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row bg-color no-gutters mt-100">
                 <div class="col-lg-4 col-md-6">
-                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.1)">
+                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="#BCC0C2">
                         <i class=""></i>
                         <div class="text">
                             <h4>Agendar reunião</h4>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.2)">
+                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="#CED0D2">
                         <i class=""></i>
                         <div class="text">
                             <h4>Análise de caso</h4>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="rgba(0,0,0,.3)">
+                    <div class="feature-box f-boxed style-3 text-center" data-bgcolor="#BCC0C2">
                         <i class=""></i>
                         <div class="text">
                             <h4>Serviço especializado</h4>
