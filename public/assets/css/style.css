@@ -57,7 +57,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Jost:400,200,300,500,600,700,800);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dobra+Book&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dobra+Book&display=swap'); */
 
 /* body {
     font-family: 'Dobra Book', sans-serif;
@@ -2750,9 +2750,7 @@ a.btn-add_to_cart:before {
     left: 20px;
 }
 
-a.btn-custom,
 .btn-custom,
-a.btn-slider,
 .btn-slider {
     font-family: "Jost";
     font-size: 12px;
@@ -13847,10 +13845,7 @@ img {
 
 @font-face {
     font-family: 'Arial Nova';
-    src: local('Arial Nova Regular'), local('Arial-Nova-Regular'),
-    url('../fonts/ArialNova.woff2') format('woff2'),
-    url('../fonts/ArialNova.woff') format('woff'),
-    url('../fonts/ArialNova.ttf') format('truetype');
+    src: url('/assets/fonts/novas/ArialNova.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
@@ -13863,4 +13858,15 @@ img {
 h1,h2,h3,h4,h5,h6{
     font-family: "Dobra Book", serif;
     /*color: var(--title-font-color-primary);*/
+}
+p, a , span, li, input {
+    font-family: "Arial Nova", serif;
+    /*color: var(--title-font-color-primary);*/
+}
+
+a.btn-custom,
+a.btn-slider {
+    font-family: "Arial Nova", serif;
+    font-size: 12px;
+    min-width: 120px;
 }
