@@ -141,7 +141,7 @@
                     <h3 class="no-bottom">Obtenha aconselhamento especializado para o seu caso.</h3>
                 </div>
                 <div class="col-md-4 text-lg-end rtl-lg-start text-sm-center">
-                    <a href="{{  route('site.contact')  }}" class="btn-custom_inverse wow fadeInUp">Pedir contação</a>
+                    <a href="{{  route('site.contact')  }}" class="btn-custom_inverse wow fadeInUp">Contactar</a>
                 </div>
             </div>
         </div>
