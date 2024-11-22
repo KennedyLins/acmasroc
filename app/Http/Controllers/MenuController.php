@@ -118,7 +118,7 @@ class MenuController extends Controller
 
     public function equipa(Request $request)
     {
-        return view('site.equipa');
+        return view('site.equipa_old');
     }
    
     public function comunicacao_noticias(Request $request)
