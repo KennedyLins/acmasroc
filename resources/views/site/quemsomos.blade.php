@@ -171,7 +171,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <h1 style="color: dimgray; font-family: 'RotundaLight', sans-serif; font-weight: 50">
+                <h1 style="color: dimgray; font-weight: 50">
                     Parcerias Sólidas e de Longo Prazo
                 </h1>
                 <p style="color: dimgray">Contamos com clientes de referência em diversos
