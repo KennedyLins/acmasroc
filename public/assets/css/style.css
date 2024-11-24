@@ -1,7 +1,7 @@
 /* ================================================== */
 
 
-/* JUSTICA
+/* JUSTICA 1 Actual
 /* created by designesia
 
 * body
@@ -884,6 +884,7 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
     padding: 2px 4px;
     text-align: center;
     cursor: pointer;
+    /* background: var(--primary-color); */
     color: #fff;
     margin-left: 20px;
 }
@@ -895,16 +896,28 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
 }
 
 #menu-btn:hover {
-    background: #fff;
+    background: #dbdada;
 }
 
-#menu-btn:hover:before {
+/* #menu-btn:hover:before {
     color: #222;
-}
+} */
 
 .rtl #menu-btn {
     float: left;
     margin-left: 0;
+}
+
+#mainmenu.active {
+    /* display: block; */
+    background-color: #fff;
+    color: var(--primary-color); 
+}
+
+#menu-btn.active {
+    /* display: block; */
+    background-color: #fff;
+    color: var(--primary-color); 
 }
 
 header.header-mobile.header-light,
@@ -5443,7 +5456,7 @@ footer .ul-style-2.s2 li:after{
 }
 
 .accordion-section-title.active:before {
-    content: "\f106";x
+    content: "\f106";
 }
 
 .accordion-section-title.active {
@@ -8775,8 +8788,8 @@ a.img-icon-zoom {
     width: 100%;
 }
 
-margin:5px;
-}
+/* margin:5px;
+} */
 
 /* clear fix */
 .grid:after {
@@ -8987,7 +9000,8 @@ margin:5px;
     border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {
+    border-color: #eceff3;
 }
 
 footer .widget {
@@ -10515,7 +10529,7 @@ section.no-padding {
 .owl-arrow .next:before {
     font-family: "FontAwesome";
     content: '\f177';
-    color: #2;
+    color: #222;
     padding: 20px;
     font-size: 32px;
     display: block;
@@ -12664,7 +12678,7 @@ a.btn-slider:hover {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .testi-slider .flex-control-paging li a {
@@ -13051,8 +13065,7 @@ img {
         position: fixed;
     }
 
-    #subheader,
-        {
+    #subheader {
         padding: 0 0 0 0;
     }
 
@@ -13180,7 +13193,7 @@ img {
 
     #mainmenu li ul li {
         border: none;
-        padding-left: 40px;
+        padding-left: 0px;
     }
 
     #mainmenu li ul li a {
@@ -13189,7 +13202,7 @@ img {
 
     #mainmenu li ul li:last-child {
         border-bottom: none;
-        margin: 0;
+        /* margin: 0; */
     }
 
     #mainmenu li ul li:last-child a {
@@ -13243,8 +13256,9 @@ img {
 
     header.header-mobile #mainmenu li {
         border-bottom: solid 1px #eee;
-        ;
+        /* ; */
         margin: 0;
+        margin-left:18px;
         width: 100%;
         display: block;
     }
@@ -13295,7 +13309,7 @@ img {
 
     header.header-mobile #mainmenu li ul li {
         border: none;
-        padding-left: 40px;
+        padding-left: 0px;
     }
 
     header #mainmenu li ul li:first-child {
@@ -13309,7 +13323,7 @@ img {
 
     header.header-mobile #mainmenu li ul li:last-child {
         border-bottom: none;
-        margin: 0;
+        margin: 0px 0px 0px 20px;
     }
 
     header.header-mobile #mainmenu li ul li:last-child a {

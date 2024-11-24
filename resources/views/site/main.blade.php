@@ -37,14 +37,14 @@
         align-items: center;
     }
 
-    /* Logo styling */
+
     #logo img {
         width: 150px;
         height: 63px;
         object-fit: contain;
     }
 
-    /* Flexbox settings for aligning items */
+
     header .row {
         display: flex;
         justify-content: space-between;
@@ -52,7 +52,7 @@
         width: 100%;
     }
 
-    /* Mobile Menu Button */
+
     .menu-btn {
         background: none;
         border: none;
@@ -63,7 +63,7 @@
         justify-content: center;
     }
 
-    /* Configuração do menu para dispositivos móveis */
+
     #mainmenu {
         display: none;
         flex-direction: column;
@@ -79,7 +79,10 @@
     }
 
     #mainmenu.show {
-        display: flex;
+        display: flex; 
+        opacity: 1;
+        transform: translateY(-10px); 
+        transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
     #mainmenu ul {
@@ -96,7 +99,6 @@
         text-decoration: none;
     }
 
-    /* Botão de fechar o menu no topo, fora do conteúdo do menu */
     .close-menu-btn {
         font-size: 24px;
         color: white;
@@ -106,7 +108,7 @@
         position: absolute;
         top: 10px;
         right: 20px;
-        z-index: 1001; /* Garante que o botão esteja acima de outros elementos */
+        z-index: 1001; 
     }
 
     #visao_global {
@@ -116,12 +118,25 @@
     #visao_global2 {
          display: block;
     }
+    @media (max-width: 991px) {
+        #mainmenu {
+            transition: height 0.5s ease-in-out; 
+        }
+        #mainmenu li {
+ 
+            transition: opacity 0.5s ease, transform 0.5s ease; 
+        }
+        #mainmenu a span {
 
-    /* Menu normal para telas grandes */
+            transition: opacity 0.5s ease, transform 0.5s ease; 
+        }
+       
+    }
+
     @media (min-width: 992px) {
         #mainmenu {
             display: flex !important;
-            flex-direction: row; /* Coloca o menu na horizontal */
+            flex-direction: row; 
             justify-content: center;
             position: relative;
             top: unset;
@@ -132,11 +147,11 @@
         }
 
         #mainmenu li {
-            margin: 0 15px; /* Espaçamento horizontal entre itens do menu */
+            margin: 0 15px; 
         }
 
         .menu-btn, .close-menu-btn {
-            display: none; /* Oculta o botão de menu em telas grandes */
+            display: none; 
         }
 
         #visao_global {
@@ -166,12 +181,14 @@
         </div>
 
         <!-- header begin -->
-       <!-- header begin -->
-       <header class="transparent">
+       <!-- header begin transparent -->
+        <!-- Mobile Menu Button -->
+       
+       <header class=" transparent ">
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-between align-items-center">
-                        <div id="logo">
+                        <div id="logo" class="de-flex sm-pt10">
                             <!-- logo begin -->
                             <a href="{{  url('/') }}">
                                 <img alt="" class="logo" src="{{asset('assets/images/logo_asroc.png')}}" />
@@ -179,14 +196,11 @@
                             </a>
                             <!-- logo close -->
                         </div>
-
-                        <!-- Mobile Menu Button -->
-                        <button id="menu-btn" class="d-lg-none menu-btn"></button>
-                          
+                        
                         <div class="de-flex-col header-col-mid ">
                             <!-- mainmenu begin -->
-                            <ul id="mainmenu">
-                                <li class="has-submenu"><a href="{{  route('site.home.quemsomos') }}" @if(Route::is('site.home.quemsomos*')) style="color:#4e4343cf;" @endif >Quem somos</a>
+                            <ul id="mainmenu" style="posititon: relative">
+                                <li class="has-submenu"><a href="{{  route('site.home.quemsomos') }}" @if(Route::is('site.home.quemsomos*')) class="ul-desktop-mobile"  @endif >Quem somos</a>
                                     {{-- <ul>
                                         <li><a href="{{  url('/') }}#missao">O nosso propósito</a></li>
                                         <li><a href="{{  url('/') }}#visao">Os nossos valores</a></li>
@@ -195,25 +209,28 @@
                                         <li><a href="#">Responsabilidade social</a></li>
                                     </ul> --}}
                                     <ul class="submenu" >
-                                        <li data-target="pills-proposito"><a href="{{  route('site.home.quemsomos') }}#missao" @if(Route::is('site.home.proposito')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
-                                        <li data-target="pills-valores"><a href="{{  route('site.home.quemsomos') }}#visao" @if(Route::is('site.home.valores')) style="color:#EEEEEE; background-color:#54636b;" @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
-                                        <li ><a href="{{  route('site.home.transparencia')  }}" @if(Route::is('site.home.transparencia')) style="color:#EEEEEE; background-color:#54636b;" @endif >Relatório de transparência</a></li>
-                                        <li><a href="{{  route('site.home.codigo')  }}" @if(Route::is('site.home.codigo')) style="color:#EEEEEE; background-color:#54636b;" @endif>Código de conduta</a></li>
-                                        <li><a href="{{  route('site.home.responsibilidade')  }}" @if(Route::is('site.home.responsibilidade')) style="color:#EEEEEE; background-color:#54636b;" @endif>Responsabilidade social</a></li>
+                                        <li data-target="pills-proposito"><a href="{{  route('site.home.quemsomos') }}#missao" @if(Route::is('site.home.proposito')) class="button-desktop-mobile"  @endif class="ref-item" id="ref-pills-proposito">O nosso propósito</a></li>
+                                        <li data-target="pills-valores"><a href="{{  route('site.home.quemsomos') }}#visao" @if(Route::is('site.home.valores')) class="button-desktop-mobile"  @endif class="ref-item" id="ref-pills-valores">Os nossos valores</a></li>
+                                        <li ><a href="{{  route('site.home.transparencia')  }}" @if(Route::is('site.home.transparencia')) class="button-desktop-mobile"   @endif >Relatório de transparência</a></li>
+                                        <li><a href="{{  route('site.home.codigo')  }}" @if(Route::is('site.home.codigo')) class="button-desktop-mobile"  @endif>Código de conduta</a></li>
+                                        <li><a href="{{  route('site.home.responsibilidade')  }}" @if(Route::is('site.home.responsibilidade')) class="button-desktop-mobile"@endif>Responsabilidade social</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{  route('site.equipa')  }}#equipa" @if(Route::is('site.equipa*')) style="color:#4e4343cf;" @endif >Equipa</a></li>
-                                <li><a href="{{  route('site.servicos')  }}#servicos" @if(Route::is('site.servicos*')) style="color:#4e4343cf;" @endif >Serviços</a></li>
-                                <li class="has-submenu"><a href="#" @if(Route::is('site.comunicacao*')) style="color:#4e4343cf;" @endif>Comunicação</a>
+                                <li><a href="{{  route('site.equipa')  }}#equipa" @if(Route::is('site.equipa*')) class="ul-desktop-mobile"  @endif >Equipa</a></li>
+                                <li><a href="{{  route('site.servicos')  }}#servicos" @if(Route::is('site.servicos*')) class="ul-desktop-mobile"  @endif >Serviços</a></li>
+                                <li class="has-submenu"><a href="#" @if(Route::is('site.comunicacao*')) class="ul-desktop-mobile"  @endif>Comunicação</a>
                                     <ul class="submenu">
-                                        <li><a href="{{  route('site.comunicacao.noticias')  }}" @if(Route::is('site.comunicacao.noticias')) style="color:#EEEEEE; background-color:#54636b;" @endif>Notícias</a></li>
-                                        <li><a href="{{  route('site.comunicacao.newsletter')  }}" @if(Route::is('site.comunicacao.newsletter')) style="color:#EEEEEE; background-color:#54636b;" @endif>Newsletter</a></li>
+                                        <li><a href="{{  route('site.comunicacao.noticias')  }}" @if(Route::is('site.comunicacao.noticias')) class="button-desktop-mobile"  @endif>Notícias</a></li>
+                                        <li><a href="{{  route('site.comunicacao.newsletter')  }}" @if(Route::is('site.comunicacao.newsletter')) class="button-desktop-mobile"  @endif>Newsletter</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{  route('site.contact')  }}" @if(Route::is('site.contact*')) style="color:#4e4343cf;" @endif >Contactos</a></li>
+                                <li><a href="{{  route('site.contact')  }}" @if(Route::is('site.contact*')) class="ul-desktop-mobile"  @endif >Contactos</a></li>
                             </ul>
                             <!-- mainmenu close -->
                         </div>
+                        <span id="menu-btn" class="d-lg-none"></span>
+                       
+
                     </div>
                 </div>
             </div>
@@ -297,11 +314,30 @@
 
     <!-- Javascript Files
     ================================================== -->
-s
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mainmenu = document.getElementById('mainmenu');
 
+    
+
+    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.isotope.min.js')}}"></script>
+    <script src="{{asset('assets/js/easing.js')}}"></script>
+    <script src="{{asset('assets/js/owl.carousel.js')}}"></script>
+    <script src="{{asset('assets/js/validation.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('assets/js/enquire.min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.stellar.min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.plugin.js')}}"></script>
+    <script src="{{asset('assets/js/typed.js')}}"></script>
+    <script src="{{asset('assets/js/jarallax.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.countTo.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.countdown.js')}}"></script>
+    <script src="{{asset('assets/js/typed.js')}}"></script>
+    <script src="{{asset('assets/js/jarallax.js')}}"></script>
+    <script src="{{asset('assets/js/designesia.js')}}?v={{ rand() }}"></script>
+
+    <script>
+ 
         // // Função para abrir e fechar o menu
         // menuBtn.addEventListener('click', function () {
         //     mainmenu.classList.toggle('show');
@@ -354,98 +390,283 @@ s
         //         // window.location.href = link.href;  // Isto redirecionará para o link.
         //     });
         // });
-
+        var h; 
+        
         document.addEventListener('DOMContentLoaded', function () {
 
-            const links = document.querySelectorAll('.ref-item');
-
-            links.forEach(function(link) {
-                link.addEventListener('click', function(event) {
-
-                    const targetIdButton = link.id;
-
-                    const tabIdItem = targetIdButton.replace('ref-', '');
-
-                    const tabId = targetIdButton.replace('ref-', '') + '-tab';
-
-                    // document.getElementById('pills-valores-tab').click();
-
-                    document.getElementById(tabId).click();
-
-                    const tabLink = document.getElementById(tabId);
-                        
-                    const targetId = link.getAttribute('href').split('#')[1]; 
-
-                    if (tabId) {
-                        const targetElement = document.getElementById(targetId);
-                        if (targetElement) {
-                            targetElement.scrollIntoView({
-                                behavior: 'smooth', 
-                                block: 'start'       
-                            });
-                            const tabLink = document.querySelector(`[data-tab="${tabIdItem}"]`);  
-                            if (tabLink) {
-                                tabLink.click();
-                            }
-                        }
-                    }
-                });
+            // Seleciona o botão e o menu
+            const menuBtn = document.getElementById('menu-btn');
+            const mainMenu = document.getElementById('mainmenu');
+            
+            // Adiciona o evento de clique ao botão
+            menuBtn.addEventListener('click', () => {
+                if (mainMenu.classList.contains('active')) {
+                    menuBtn.classList.remove('active');
+                    mainMenu.classList.remove('active'); 
+                } else {
+                    menuBtn.classList.add('active');
+                    mainMenu.classList.add('active'); 
+                    console.log("Menu ativo"); 
+                }
             });
+
+
+            document.addEventListener('click', (event) => {
+                if (!mainMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                    mainMenu.classList.remove('active'); // Remove a visibilidade
+                }
+            });
+
+
+            const mediaQuery = window.matchMedia('(max-width: 995px)');
+
+            let targetContent = document.getElementById("mainmenu");
+            targetContent.classList.remove("active");
+            targetContent.classList.remove("show");
+            targetContent.removeAttribute("style");
+
+            function handleMenu() { 
+                if (mediaQuery.matches) {
+                    document.getElementById('menu-btn').addEventListener('click', function () {
+                        const menu = document.getElementById('mainmenu');
+                        console.log(menu);
+
+                        if (menu.classList.contains('show')) {
+                            menu.classList.remove('show'); 
+                            menu.style.transition = ''; 
+                            menu.style.height = menu.scrollHeight + 'px'; 
+                            requestAnimationFrame(() => {
+                                menu.style.transition = 'height 0.5s ease'; 
+                                menu.style.height = '0'; 
+                            });
+                            h = jQuery('#mainmenu')[0].scrollHeight;
+                            console.log(h);
+                        } else {
+                            menu.classList.add('show');
+                            menu.style.height = '0'; 
+                            menu.style.transition = 'height 0.5s ease'; 
+                            requestAnimationFrame(() => {
+                                menu.style.height = menu.scrollHeight + 'px'; 
+                            });
+   
+                            menu.style.opacity = 0; 
+                            menu.style.transition = "opacity 0.5s ease"; 
+                            requestAnimationFrame(() => {
+                                menu.style.opacity = 1; 
+                            });
+
+                            menu.addEventListener('transitionend', function handleTransitionEnd() {
+                                menu.querySelectorAll('li').forEach(item => {
+                                    item.style.transition = 'opacity 0.1s ease, transform 0.1s ease';
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1)';
+                                });
+                                menu.removeEventListener('transitionend', handleTransitionEnd);
+                            });
+                            h = jQuery('#mainmenu')[0].scrollHeight;
+                            console.log(h);
+                        }
+    
+                    });
+
+
+                    document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
+                        submenuLink.addEventListener('click', function (e) {
+                            e.preventDefault(); 
+                            const parentLi = submenuLink.parentElement;
+                            parentLi.classList.toggle('open'); 
+                        });
+                    });
+                }
+                
+            }
+
+            handleMenu();
+            
+        });
+        function handleMenu() { 
+                console.log(mediaQuery);
+                if (mediaQuery.matches) {
+                    document.getElementById('menu-btn').addEventListener('click', function () {
+                        const menu = document.getElementById('mainmenu');
+                        if (menu.classList.contains('show')) {
+                            menu.classList.remove('show'); 
+                            menu.style.transition = ''; 
+                            menu.style.height = menu.scrollHeight + 'px'; 
+                            requestAnimationFrame(() => {
+                                menu.style.transition = 'height 0.5s ease'; 
+                                menu.style.height = '0'; 
+                            });
+                            
+                        } else {
+                            menu.classList.add('show'); 
+                            menu.style.height = '0'; 
+                            menu.style.transition = 'height 0.5s ease';
+                            setTimeout(function() {
+                                menu.style.height = menu.scrollHeight + 'px'; 
+                            }, 10); 
+                        }
+    
+                    });
+
+                    document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
+                        submenuLink.addEventListener('click', function (e) {
+                            e.preventDefault(); 
+                            const parentLi = submenuLink.parentElement;
+                            parentLi.classList.toggle('open'); 
+                        });
+                    });
+                }
+            }
+        window.addEventListener('change', function() {
+
+            
         });
 
+        window.addEventListener('resize', function() {
+            
+            const mediaQuery = window.matchMedia('(max-width: 995px)');
 
+            let targetContent = document.getElementById("mainmenu");
+            targetContent.classList.remove("active");
+            targetContent.classList.remove("show");
+            targetContent.removeAttribute("style");
 
-        // const mediaQuery = window.matchMedia('(max-width: 995px)');
+            function handleMenu() { 
+                if (mediaQuery.matches) {
+                    document.getElementById('menu-btn').addEventListener('click', function () {
+                        const menu = document.getElementById('mainmenu');
+                        console.log(menu);
 
-        // // Ativar/desativar comportamento com base na largura da tela
-        // function handleMenu() {
-        //     if (mediaQuery.matches) {
-        //         // Controle do menu principal
-        //         document.getElementById('menu-btn').addEventListener('click', function () {
-        //             const menu = document.getElementById('mainmenu');
-        //             menu.classList.toggle('show'); // Mostra/esconde o menu principal
-        //         });
+                        if (menu.classList.contains('show')) {
+                            menu.classList.remove('show'); 
+                            menu.style.transition = ''; 
+                            menu.style.height = menu.scrollHeight + 'px'; 
+                            requestAnimationFrame(() => {
+                                menu.style.transition = 'height 0.5s ease'; 
+                                menu.style.height = '0'; 
+                            });
+                            h = jQuery('#mainmenu')[0].scrollHeight;
+                            console.log(h);
+                        } else {
+                            menu.classList.add('show');
+                            menu.style.height = '0'; 
+                            menu.style.transition = 'height 0.5s ease'; 
+                            requestAnimationFrame(() => {
+                                menu.style.height = menu.scrollHeight + 'px'; 
+                            });
+   
+                            menu.style.opacity = 0; 
+                            menu.style.transition = "opacity 0.5s ease"; 
+                            requestAnimationFrame(() => {
+                                menu.style.opacity = 1; 
+                            });
 
-        //         // Controle dos submenus
-        //         document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
-        //             submenuLink.addEventListener('click', function (e) {
-        //                 e.preventDefault(); // Previne o redirecionamento
-        //                 const parentLi = submenuLink.parentElement;
-        //                 parentLi.classList.toggle('open'); // Mostra/esconde o submenu
-        //             });
-        //         });
-        //     }
-        // }
+                            menu.addEventListener('transitionend', function handleTransitionEnd() {
+                                menu.querySelectorAll('li').forEach(item => {
+                                    item.style.transition = 'opacity 0.1s ease, transform 0.1s ease';
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1)';
+                                });
+                                menu.removeEventListener('transitionend', handleTransitionEnd);
+                            });
+                            h = jQuery('#mainmenu')[0].scrollHeight;
+                            console.log(h);
+                        }
+    
+                    });
 
-        // handleMenu();
+                    document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
+                        submenuLink.addEventListener('click', function (e) {
+                            e.preventDefault(); 
+                            const parentLi = submenuLink.parentElement;
+                            parentLi.classList.toggle('open'); 
+                        });
+                    });
+                }
+                
+            }
+  
+        });
+        var totalHeight = 0;
+        jQuery('#mainmenu li a').each(function() {
+             if ($(this).next("ul").length > 0) {
+                 $("<span></span>").insertAfter($(this));
+             }
+         });
 
-        // mediaQuery.addEventListener('change', handleMenu);
+        jQuery("#mainmenu > li > span").on("click", function() {
+                
+             var iteration = $(this).data('iteration') || 1;
 
-        // // Detecta o redimensionamento da janela (resize) e chama a função
-        // window.addEventListener('resize', function() {
-        //     handleMenu(); // Chama a função ao redimensionar a janela
-        // });
+             switch (iteration) {
+                 case 1:
+                    let isAnimating = false;  // Variável de controle para verificar se a animação está em andamento
+                     $(this).addClass("active");
+                     $(this).parent().find("ul:first").css("height", "auto");
+                     var curHeight = $(this).parent().find("ul:first").height();
+                     $(this).parent().find("ul:first").css("height", "0");
+                     console.log("Cur: " + curHeight);
+                     console.log("CutotHeigr: " + totalHeight);
+                     
+                     $(this).parent().find("ul:first").animate({
+                         'height': curHeight
+                     }, 300, 'easeOutQuint', function() {
+                        var newMainMenuHeight = $('#mainmenu')[0].scrollHeight; 
+                        console.log("Nova altura do mainmenu: " + newMainMenuHeight);
+                        $('#mainmenu').css("height", h + curHeight + totalHeight);
+                        totalHeight = curHeight + totalHeight;
+                    });
+
+                     console.log(h);
+                     console.log(curHeight);
+                     console.log(iteration);
+                    //  $('#mainmenu').css("height", $('#mainmenu')[0].newMainMenuHeight+(parseInt($tmp_h)*2));
+                     break;
+                 case 2:
+                    var curHeight = $(this).parent().find("ul:first").height();
+                     $(this).removeClass("active");
+                     $(this).parent().find("ul:first").animate({
+                         'height': "0"
+                     }, 300, 'easeOutQuint', function() {
+                        var newMainMenuHeight = $('#mainmenu')[0].scrollHeight; 
+                        $('#mainmenu').css("height", newMainMenuHeight-curHeight);
+                        totalHeight = - curHeight + totalHeight;
+                    });
+                    break;
+             }
+             iteration++;
+             if (iteration > 2) iteration = 1;
+             $(this).data('iteration', iteration);console.log("selecionado main menu");
+         }); 
+         jQuery("#mainmenu > li > ul > li > span").on("click", function() {
+            console.log("selecionado main menu");
+             var iteration = $(this).data('iteration') || 1;
+             switch (iteration) {
+                 case 1:
+                     $(this).addClass("active");
+                     $(this).parent().find("ul:first").css("height", "auto");
+                     $(this).parent().parent().parent().find("ul:first").css("height", "auto");
+                     var curHeight = $(this).parent().find("ul:first").height();
+                     $(this).parent().find("ul:first").css("height", "0");
+                     $(this).parent().find("ul:first").animate({
+                         'height': curHeight
+                     }, 400, 'easeInOutQuint');
+                     break;
+                 case 2:
+                     $(this).removeClass("active");
+                     $(this).parent().find("ul:first").animate({
+                         'height': "0"
+                     }, 400, 'easeInOutQuint');
+                     break;
+             }
+             iteration++;
+             if (iteration > 2) iteration = 1;
+             $(this).data('iteration', iteration);
+         });
+       
                 
     </script>
-
-    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/js/wow.min.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.isotope.min.js')}}"></script>
-    <script src="{{asset('assets/js/easing.js')}}"></script>
-    <script src="{{asset('assets/js/owl.carousel.js')}}"></script>
-    <script src="{{asset('assets/js/validation.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{asset('assets/js/enquire.min.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.stellar.min.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.plugin.js')}}"></script>
-    <script src="{{asset('assets/js/typed.js')}}"></script>
-    <script src="{{asset('assets/js/jarallax.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.countTo.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.countdown.js')}}"></script>
-    <script src="{{asset('assets/js/typed.js')}}"></script>
-    <script src="{{asset('assets/js/jarallax.js')}}"></script>
-    <script src="{{asset('assets/js/designesia.js')}}"></script>
 
 
 </body>

@@ -770,63 +770,79 @@
       * --------------------------------------------------*/
      function menu_arrow() {
          // mainmenu create span
-         jQuery('#mainmenu li a').each(function() {
-             if ($(this).next("ul").length > 0) {
-                 $("<span></span>").insertAfter($(this));
-             }
-         });
-         // mainmenu arrow click
-         jQuery("#mainmenu > li > span").on("click", function() {
-             
-             var iteration = $(this).data('iteration') || 1;
-             switch (iteration) {
-                 case 1:
-                     $(this).addClass("active");
-                     $(this).parent().find("ul:first").css("height", "auto");
-                     var curHeight = $(this).parent().find("ul:first").height();
-                     $(this).parent().find("ul:first").css("height", "0");
-                     $(this).parent().find("ul:first").animate({
-                         'height': curHeight
-                     }, 300, 'easeOutQuint');
-                     $('header').css("height", $('#mainmenu')[0].scrollHeight+curHeight+(parseInt($tmp_h)*2));
-                     break;
-                 case 2:
-                    var curHeight = $(this).parent().find("ul:first").height();
-                     $(this).removeClass("active");
-                     $(this).parent().find("ul:first").animate({
-                         'height': "0"
-                     }, 300, 'easeOutQuint');
-                     $('header').css("height", $('#mainmenu')[0].scrollHeight-curHeight+(parseInt($tmp_h)*2));
-                     break;
-             }
-             iteration++;
-             if (iteration > 2) iteration = 1;
-             $(this).data('iteration', iteration);
-         });
-         jQuery("#mainmenu > li > ul > li > span").on("click", function() {
-             var iteration = $(this).data('iteration') || 1;
-             switch (iteration) {
-                 case 1:
-                     $(this).addClass("active");
-                     $(this).parent().find("ul:first").css("height", "auto");
-                     $(this).parent().parent().parent().find("ul:first").css("height", "auto");
-                     var curHeight = $(this).parent().find("ul:first").height();
-                     $(this).parent().find("ul:first").css("height", "0");
-                     $(this).parent().find("ul:first").animate({
-                         'height': curHeight
-                     }, 400, 'easeInOutQuint');
-                     break;
-                 case 2:
-                     $(this).removeClass("active");
-                     $(this).parent().find("ul:first").animate({
-                         'height': "0"
-                     }, 400, 'easeInOutQuint');
-                     break;
-             }
-             iteration++;
-             if (iteration > 2) iteration = 1;
-             $(this).data('iteration', iteration);
-         });
+         console.log("carregado menu_arrow");
+
+        //  jQuery('#mainmenu li a').each(function() {
+        //      if ($(this).next("ul").length > 0) {
+        //          $("<span></span>").insertAfter($(this));
+        //      }
+        //  });
+
+        //  // mainmenu arrow click
+        //  jQuery("#mainmenu > li > span").on("click", function() {
+                
+        //      var iteration = $(this).data('iteration') || 1;
+        //      switch (iteration) {
+        //          case 1:
+        //              $(this).addClass("active");
+        //              $(this).parent().find("ul:first").css("height", "auto");
+        //              var curHeight = $(this).parent().find("ul:first").height();
+        //              $(this).parent().find("ul:first").css("height", "0");
+                     
+        //              $(this).parent().find("ul:first").animate({
+        //                  'height': curHeight
+        //              }, 300, 'easeOutQuint', function() {
+        //                 // Callback quando a animação termina
+                    
+        //                 // Aqui você pode obter a nova altura do #mainmenu após a animação
+        //                 var newMainMenuHeight = $('#mainmenu')[0].scrollHeight; // Ou .height()
+        //                 console.log("Nova altura do mainmenu: " + newMainMenuHeight);
+        //                 $('#mainmenu').css("height", newMainMenuHeight+(parseInt($tmp_h)*2));
+        //             });
+
+        //              console.log(h);
+        //              console.log(curHeight);
+        //             //  $('#mainmenu').css("height", $('#mainmenu')[0].newMainMenuHeight+(parseInt($tmp_h)*2));
+        //              break;
+        //          case 2:
+        //             var curHeight = $(this).parent().find("ul:first").height();
+        //              $(this).removeClass("active");
+        //              $(this).parent().find("ul:first").animate({
+        //                  'height': "0"
+        //              }, 300, 'easeOutQuint');
+        //              console.log(h)
+        //              $('#mainmenu').css("height", h);
+        //              break;
+        //      }
+        //      iteration++;
+        //      if (iteration > 2) iteration = 1;
+        //      $(this).data('iteration', iteration);console.log("selecionado main menu");
+        //  }); 
+        //  jQuery("#mainmenu > li > ul > li > span").on("click", function() {
+        //     console.log("selecionado main menu");
+        //      var iteration = $(this).data('iteration') || 1;
+        //      switch (iteration) {
+        //          case 1:
+        //              $(this).addClass("active");
+        //              $(this).parent().find("ul:first").css("height", "auto");
+        //              $(this).parent().parent().parent().find("ul:first").css("height", "auto");
+        //              var curHeight = $(this).parent().find("ul:first").height();
+        //              $(this).parent().find("ul:first").css("height", "0");
+        //              $(this).parent().find("ul:first").animate({
+        //                  'height': curHeight
+        //              }, 400, 'easeInOutQuint');
+        //              break;
+        //          case 2:
+        //              $(this).removeClass("active");
+        //              $(this).parent().find("ul:first").animate({
+        //                  'height': "0"
+        //              }, 400, 'easeInOutQuint');
+        //              break;
+        //      }
+        //      iteration++;
+        //      if (iteration > 2) iteration = 1;
+        //      $(this).data('iteration', iteration);
+        //  });
      }
      /* --------------------------------------------------
       * show gallery item sequence
@@ -1244,22 +1260,26 @@
          // --------------------------------------------------
          // navigation for mobile
          // --------------------------------------------------
-         jQuery('#menu-btn').on("click", function() {
-
-            var h = jQuery('header')[0].scrollHeight;
+        //  jQuery('#menu-btn').on("click", function() {
             
-             if (mobile_menu_show == 0) {
-                 jQuery('header.header-mobile').stop(true).animate({
-                     'height': h
-                 }, 200, 'easeOutCubic');
-                 mobile_menu_show = 1;
-             } else {
-                 jQuery('header.header-mobile').stop(true).animate({
-                     'height': $tmp_h
-                 }, 200, 'easeOutCubic');
-                 mobile_menu_show = 0;
-             }
-         })
+        //     // console.log("selecionado");
+
+        //     var h = jQuery('#mainmenu')[0].scrollHeight;
+        //     // // h=412;
+        //     console.log("h", h);
+
+        //      if (mobile_menu_show == 0) {
+        //          jQuery('header.header-mobile').stop(true).animate({
+        //              'height': h
+        //          }, 200, 'easeOutCubic');
+        //          mobile_menu_show = 1;
+        //      } else {
+        //          jQuery('header.header-mobile').stop(true).animate({
+        //              'height': $tmp_h
+        //          }, 200, 'easeOutCubic');
+        //          mobile_menu_show = 0;
+        //      }
+        //  })
          jQuery("a.btn").on("click", function(evn) {
              if (this.href.indexOf('#') != -1) {
                  evn.preventDefault();
@@ -1402,22 +1422,27 @@
                  jQuery(this).find(".image-container").css("height", jQuery(this).find(".image-container").parent().css("height"));
              }); */
              /* go to anchor */
-             jQuery('#mainmenu li a').each(function() {
-                 var cur = jQuery(this);
-                 if (this.href.indexOf('#') != -1) {
-                     var href = jQuery(this).attr('href');
-                    if (location.hash!=="") {
-                         if (jQuery(window).scrollTop() > jQuery(href).offset().top - 140) {
-                             clearTimeout($.data(this, "scrollCheck"));
-                             $.data(this, "scrollCheck", setTimeout(function() {
-                                 jQuery('#mainmenu li a').removeClass('active');
-                                 cur.addClass('active');
-                             }, 250));
+            //  jQuery('#mainmenu li a').each(function() {
+            //      var cur = jQuery(this);
+            //      if (this.href.indexOf('#') != -1) {
+            //          var href = jQuery(this).attr('href');
+            //         if (location.hash!=="") {
+            //             if (href.includes("#")) {
+            //                 var targetSelector = "#" + href.split("#")[1];
+            //                 var safeSelector = targetSelector.replace(/(:|\.|\[|\]|,|=|@)/g, "\\$1"); // Escapa os caracteres especiais
+                        
+            //                 if (jQuery(window).scrollTop() >  140) {
+            //                     clearTimeout($.data(this, "scrollCheck"));
+            //                     $.data(this, "scrollCheck", setTimeout(function() {
+            //                         jQuery('#mainmenu li a').removeClass('active');
+            //                         cur.addClass('active');
+            //                     }, 250));
 
-                         }
-                     }
-                 }
-             });
+            //                 }
+            //             }
+            //          }
+            //      }
+            //  });
              
              // acc
              $('.toggle').click(function(e) {
@@ -1481,17 +1506,18 @@
 
 
             // new
-            enquire.register("screen and (min-width: 993px)", {
-                match: function() {
-                    mobile_menu_show = 1;
-                    jQuery("#menu-btn").hide();
-                },
-                unmatch: function() {
-                    mobile_menu_show = 0;
-                    jQuery("#menu-btn").show();
-                }
-            });
+            // enquire.register("screen and (min-width: 993px)", {
+            //     match: function() {
+            //         mobile_menu_show = 1;
+            //         jQuery("#menu-btn").hide();
+            //     },
+            //     unmatch: function() {
+            //         mobile_menu_show = 0;
+            //         jQuery("#menu-btn").show();
+            //     }
+            // });
 
          });
      });
  })(jQuery);
+ 

@@ -395,6 +395,15 @@ form.contact div.form-group textarea {
         margin-top: 10px;
     }
     
+    /* Menu */
+    .ul-desktop-mobile{
+        color:#EEEEEE; 
+        background-color:#54636b23;
+    }
+    li:has(> a.button-desktop-mobile) {
+        color:#EEEEEE; 
+        background-color:#54636b;
+    }
     
     
 }
