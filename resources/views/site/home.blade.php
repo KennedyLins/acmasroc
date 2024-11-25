@@ -171,21 +171,21 @@
                         </div>
                         <div class="spacer-single" style="background-size: cover;"></div>
                         <div class="col-md-3 offset-md-2" style="background-size: cover;">
-                            <ul class="ul-style-2 wow fadeInRight animated" data-wow-delay=".0.2s"
+                            <ul class="ul-style-2 ul-style-22 wow fadeInRight animated" data-wow-delay=".0.2s"
                                 style="visibility: visible; animation-name: fadeInRight;">
                                 <li>Auditoria</li>
                                 <li> Fiscalidade</li>
                             </ul>
                         </div>
                         <div class="col-md-3" style="background-size: cover;">
-                            <ul class="ul-style-2 wow fadeInRight animated" data-wow-delay=".0.4s"
+                            <ul class="ul-style-2  ul-style-22 wow fadeInRight animated" data-wow-delay=".0.4s"
                                 style="visibility: visible; animation-name: fadeInRight;">
                                 <li> Avaliação de Empresas</li>
                                 <li> Formação</li>
                             </ul>
                         </div>
                         <div class="col-md-3" style="background-size: cover;">
-                            <ul class="ul-style-2 wow fadeInRight animated" data-wow-delay=".0.6s"
+                            <ul class="ul-style-2  ul-style-22 wow fadeInRight animated" data-wow-delay=".0.6s"
                                 style="visibility: visible; animation-name: fadeInRight;">
                                 <li> Consultoria e Reporting</li>
                             </ul>

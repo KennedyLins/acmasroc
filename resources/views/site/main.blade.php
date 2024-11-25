@@ -162,6 +162,12 @@
             display: none;
         }
     }
+    @media (max-width: 767px){
+        .ul-style-22{
+            margin: 0px 0px -4px 0px;
+            text-align: left
+        }
+    }
 </style>
 
 </head>
@@ -312,10 +318,7 @@
         </div>
     </div>
 
-    <!-- Javascript Files
-    ================================================== -->
-
-    
+  
 
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
@@ -440,7 +443,6 @@
                                 menu.style.height = '0'; 
                             });
                             h = jQuery('#mainmenu')[0].scrollHeight;
-                            console.log(h);
                         } else {
                             menu.classList.add('show');
                             menu.style.height = '0'; 
@@ -464,7 +466,6 @@
                                 menu.removeEventListener('transitionend', handleTransitionEnd);
                             });
                             h = jQuery('#mainmenu')[0].scrollHeight;
-                            console.log(h);
                         }
     
                     });
@@ -536,7 +537,6 @@
                 if (mediaQuery.matches) {
                     document.getElementById('menu-btn').addEventListener('click', function () {
                         const menu = document.getElementById('mainmenu');
-                        console.log(menu);
 
                         if (menu.classList.contains('show')) {
                             menu.classList.remove('show'); 
@@ -571,7 +571,6 @@
                                 menu.removeEventListener('transitionend', handleTransitionEnd);
                             });
                             h = jQuery('#mainmenu')[0].scrollHeight;
-                            console.log(h);
                         }
     
                     });
@@ -601,7 +600,7 @@
 
              switch (iteration) {
                  case 1:
-                    let isAnimating = false;  // Variável de controle para verificar se a animação está em andamento
+                    let isAnimating = false;  
                      $(this).addClass("active");
                      $(this).parent().find("ul:first").css("height", "auto");
                      var curHeight = $(this).parent().find("ul:first").height();
@@ -617,12 +616,7 @@
                         $('#mainmenu').css("height", h + curHeight + totalHeight);
                         totalHeight = curHeight + totalHeight;
                     });
-
-                     console.log(h);
-                     console.log(curHeight);
-                     console.log(iteration);
-                    //  $('#mainmenu').css("height", $('#mainmenu')[0].newMainMenuHeight+(parseInt($tmp_h)*2));
-                     break;
+                break;
                  case 2:
                     var curHeight = $(this).parent().find("ul:first").height();
                      $(this).removeClass("active");
