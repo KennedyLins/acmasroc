@@ -2,7 +2,7 @@
 
 @section('content')
 <section id="subheader" class="jarallax text-white">
-    <img src="{{ asset('assets/images/background/contato.jpg') }}" class="jarallax-img" alt="">
+    <img src="{{ asset('assets/images/final/contato_main.webp') }}" class="jarallax-img" alt="">
     <div class="center-y relative text-center">
         <div class="container">
             <div class="row">
@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row text-center text-md-left">
             <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p1.jpg') }}" alt="" class="img-fluid mb-3">
+                <img src="{{ asset('assets/images/final/contato_braga.webp') }}" alt="" class="img-fluid mb-3">
                 <h3 style="color:gray">Sede</h3>
                 <address class="s1">
                     <span><i class="id-color fa fa-map-marker fa-lg"></i> Avenida da Liberdade, Edifício dos Granjinhos, nº 432 Piso 6, Sala 41-42 | 4711-912 Braga</span>
@@ -28,7 +28,7 @@
                 </address>
             </div>
             <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p2.jpg') }}" alt="" class="img-fluid mb-3">
+                <img src="{{ asset('assets/images/final/contato_trofa.webp') }}" alt="" class="img-fluid mb-3">
                 <h3 style="color:gray">Trofa</h3>
                 <address class="s1">
                     <span><i class="id-color fa fa-map-marker fa-lg"></i> Rua Fernão Magalhães, nº 254, 2º, Sala 14, 4785-319 Trofa</span>
@@ -37,7 +37,7 @@
                 </address>
             </div>
             <div class="col-md-4 mb-4">
-                <img src="{{ asset('assets/images/misc/p3.jpg') }}" alt="" class="img-fluid mb-3">
+                <img src="{{ asset('assets/images/final/contato_porto.webp') }}" alt="" class="img-fluid mb-3">
                 <h3 style="color:gray">Porto</h3>
                 <address class="s1">
                     <span><i class="id-color fa fa-map-marker fa-lg"></i> Rua Encosta do Sol, n.º 212, Hab. 2.2, Bloco D 4400-438 Canidelo, Vila Nova de Gaia</span>

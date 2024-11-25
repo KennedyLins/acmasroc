@@ -11,7 +11,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="auditoria.html" class="btn-custom_alter">Saber mais</a>
+                <a href="{{  route('site.servicos.auditoria')  }}" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box feature-box-fix pa-text f-boxed style-3 text-center gradient-light-2"
                 style="background-size: cover;">
@@ -23,7 +23,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="fiscalidade.html" class="btn-custom_alter">Saber mais</a>
+                <a href="{{  route('site.servicos.fiscalidade')  }}" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box feature-box-fix pa-text f-boxed style-3 text-center gradient-light-3"
                 style="background-size: cover;">
@@ -34,7 +34,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="avaliacao.html" class="btn-custom_alter">Saber mais</a>
+                <a href="{{  route('site.servicos.avaliacao')  }}" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box feature-box-fix pa-text f-boxed style-3 text-center gradient-light-4"
                 style="background-size: cover; ">
@@ -45,7 +45,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="formacao.html" class="btn-custom_alter">Saber mais</a>
+                <a href="{{  route('site.servicos.formacao')  }}" class="btn-custom_alter">Saber mais</a>
             </div>
             <div class="feature-box feature-box-fix pa-text f-boxed style-3 text-center gradient-light-5"
                 style="background-size: cover; ">
@@ -56,7 +56,7 @@
                 </div>
                 <i class="wm "></i>
                 <div class="spacer-single" style="background-size: cover;"></div>
-                <a href="consultoria.html" class="btn-custom_alter">Saber mais</a>
+                <a href="{{  route('site.servicos.consultoria')  }}" class="btn-custom_alter">Saber mais</a>
             </div>
         </div>
     </div>

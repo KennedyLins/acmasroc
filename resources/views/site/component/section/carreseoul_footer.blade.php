@@ -72,7 +72,7 @@
 </style>
 
 <section id="parcerias_longo_pz" class="jarallax text-black" data-bgcolor="">
-  <img src="{{asset('assets/images/equipa/fotogrupo.jpg')}}"  alt="" height="100%" width="100%">
+  <img src="{{asset('assets/images/final/quem_somos_equipa.webp')}}"  alt="" height="100%" width="100%">
   <div class="center-y relative text-center">
       <div class="container">
           <div class="row">

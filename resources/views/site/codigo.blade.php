@@ -3,7 +3,7 @@
 @section('content')
 
 <section id="subheader" class="jarallax text-white">
-    <img src="{{ asset('assets/images/bg-1-p&b.gif') }}" class="jarallax-img" alt="">
+    <img src="{{ asset('assets/images/final/codigo_conduta_main.webp') }}" class="jarallax-img" alt="">
     <div class="center-y relative text-center">
         <div class="container">
             <div class="row justify-content-center">

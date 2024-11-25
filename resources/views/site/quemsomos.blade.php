@@ -3,7 +3,7 @@
 @section('content')
 
 <section id="inicio" class="jarallax text-white">
-    <img src="{{asset('assets/images/bg-1-p&b.gif')}}" class="jarallax-img" alt="">
+    <img src="{{asset('assets/images/final/quem_somos_main.webp')}}" class="jarallax-img" alt="">
     <div class="center-y relative text-center">
         <div class="v-center">
             <div class="container">
@@ -40,9 +40,9 @@
                         height: auto;
                         max-height: 100vh;
                         aspect-ratio: 3 / 2;
-                        background: url('{{ asset('assets/images/equipa/fotogrupo.jpg') }}') center center / cover no-repeat;
+                        background: url('{{ asset('assets/images/final/quem_somos_legado.webp') }}') center center / cover no-repeat;
                     "
-                    data-bgimage="url({{asset('assets/images/equipa/fotogrupo.jpg')}}) center"
+                    data-bgimage="url({{asset('assets/images/final/quem_somos_legado.webp')}}) center"
                 ></div>
             </div>
         </div>
@@ -126,9 +126,9 @@
                         height: auto;
                         max-height: 100vh;
                         aspect-ratio: 3 / 2;
-                        background: url({{asset('assets/images/mais_numeros.png')}}) center center / cover no-repeat;
+                        background: url({{asset('assets/images/final/quem_somos_numeros.webp')}}) center center / cover no-repeat;
                     "
-                    data-bgimage="url({{asset('assets/images/mais_numeros.png')}}) center"
+                    data-bgimage="url({{asset('assets/images/final/quem_somos_numeros.webp')}}) center"
                 ></div>
             </div>
         </div>
@@ -137,7 +137,7 @@
 
 
 
-<section id="servicos" style="padding: 250px 0 90px 0; background:url({{asset('assets/images/servicos.gif')}})"  data-bgcolor="" class="text-light">
+<section id="servicos" style="padding: 250px 0 90px 0; background:url({{asset('assets/images/final/quem_somos_servicos.webp')}})"  data-bgcolor="" class="text-light">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
