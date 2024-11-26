@@ -13852,14 +13852,14 @@ img {
 @font-face {
     font-family: 'Dobra Book';
     font-family: 'Dobra Book'; /* Nome da fonte */
-    src: url('/assets/fonts/novas/Dobra-Book.woff2') format('woff2'); /* Caminho público relativo */
+    src: url('/assets/fonts/novas_/Dobra-Book.woff2') format('woff2'); /* Caminho público relativo */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Arial Nova';
-    src: url('/assets/fonts/novas/ArialNova.woff2') format('woff2');
+    src: url('/assets/fonts/novas_/ArialNova.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
