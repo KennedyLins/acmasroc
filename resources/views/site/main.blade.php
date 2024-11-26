@@ -409,7 +409,6 @@
                 } else {
                     menuBtn.classList.add('active');
                     mainMenu.classList.add('active'); 
-                    console.log("Menu ativo"); 
                 }
             });
 
@@ -432,7 +431,6 @@
                 if (mediaQuery.matches) {
                     document.getElementById('menu-btn').addEventListener('click', function () {
                         const menu = document.getElementById('mainmenu');
-                        console.log(menu);
 
                         if (menu.classList.contains('show')) {
                             menu.classList.remove('show'); 
@@ -486,54 +484,6 @@
             
         });
         function handleMenu() { 
-                console.log(mediaQuery);
-                if (mediaQuery.matches) {
-                    document.getElementById('menu-btn').addEventListener('click', function () {
-                        const menu = document.getElementById('mainmenu');
-                        if (menu.classList.contains('show')) {
-                            menu.classList.remove('show'); 
-                            menu.style.transition = ''; 
-                            menu.style.height = menu.scrollHeight + 'px'; 
-                            requestAnimationFrame(() => {
-                                menu.style.transition = 'height 0.5s ease'; 
-                                menu.style.height = '0'; 
-                            });
-                            
-                        } else {
-                            menu.classList.add('show'); 
-                            menu.style.height = '0'; 
-                            menu.style.transition = 'height 0.5s ease';
-                            setTimeout(function() {
-                                menu.style.height = menu.scrollHeight + 'px'; 
-                            }, 10); 
-                        }
-    
-                    });
-
-                    document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
-                        submenuLink.addEventListener('click', function (e) {
-                            e.preventDefault(); 
-                            const parentLi = submenuLink.parentElement;
-                            parentLi.classList.toggle('open'); 
-                        });
-                    });
-                }
-            }
-        window.addEventListener('change', function() {
-
-            
-        });
-
-        window.addEventListener('resize', function() {
-            
-            const mediaQuery = window.matchMedia('(max-width: 995px)');
-
-            let targetContent = document.getElementById("mainmenu");
-            targetContent.classList.remove("active");
-            targetContent.classList.remove("show");
-            targetContent.removeAttribute("style");
-
-            function handleMenu() { 
                 if (mediaQuery.matches) {
                     document.getElementById('menu-btn').addEventListener('click', function () {
                         const menu = document.getElementById('mainmenu');
@@ -547,7 +497,6 @@
                                 menu.style.height = '0'; 
                             });
                             h = jQuery('#mainmenu')[0].scrollHeight;
-                            console.log(h);
                         } else {
                             menu.classList.add('show');
                             menu.style.height = '0'; 
@@ -585,6 +534,92 @@
                 }
                 
             }
+        window.addEventListener('change', function() {
+
+            
+        });
+
+        window.addEventListener('resize', function() {
+            
+
+            
+            console.log("resize analise");
+
+             // Seleciona o botão e o menu
+            const menuBtn = document.getElementById('menu-btn');
+            const mainMenu = document.getElementById('mainmenu');
+            
+        
+
+            document.addEventListener('click', (event) => {
+                if (!mainMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                    mainMenu.classList.remove('active'); // Remove a visibilidade
+                }
+            });
+
+
+            const mediaQuery = window.matchMedia('(max-width: 995px)');
+
+            let targetContent = document.getElementById("mainmenu");
+            targetContent.classList.remove("active");
+            targetContent.classList.remove("show");
+            targetContent.removeAttribute("style");
+
+            function handleMenu() { 
+                if (mediaQuery.matches) {
+                    document.getElementById('menu-btn').addEventListener('click', function () {
+                        const menu = document.getElementById('mainmenu');
+
+                        if (menu.classList.contains('show')) {
+                            menu.classList.remove('show'); 
+                            menu.style.transition = ''; 
+                            menu.style.height = menu.scrollHeight + 'px'; 
+                            requestAnimationFrame(() => {
+                                menu.style.transition = 'height 0.5s ease'; 
+                                menu.style.height = '0'; 
+                            });
+                            h = jQuery('#mainmenu')[0].scrollHeight;
+
+                        } else {
+                            menu.classList.add('show');
+                            menu.style.height = '0'; 
+                            menu.style.transition = 'height 0.5s ease'; 
+                            requestAnimationFrame(() => {
+                                menu.style.height = menu.scrollHeight + 'px'; 
+                            });
+   
+                            menu.style.opacity = 0; 
+                            menu.style.transition = "opacity 0.5s ease"; 
+                            requestAnimationFrame(() => {
+                                menu.style.opacity = 1; 
+                            });
+
+                            menu.addEventListener('transitionend', function handleTransitionEnd() {
+                                menu.querySelectorAll('li').forEach(item => {
+                                    item.style.transition = 'opacity 0.1s ease, transform 0.1s ease';
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1)';
+                                });
+                                menu.removeEventListener('transitionend', handleTransitionEnd);
+                            });
+                            h = jQuery('#mainmenu')[0].scrollHeight;
+                        }
+    
+                    });
+
+                    document.querySelectorAll('.has-submenu > a').forEach(function (submenuLink) {
+                        submenuLink.addEventListener('click', function (e) {
+                            e.preventDefault(); 
+                            const parentLi = submenuLink.parentElement;
+                            parentLi.classList.toggle('open'); 
+                        });
+                    });
+
+                    handleMenu()
+
+                }
+                
+            }
   
         });
         var totalHeight = 0;
@@ -605,14 +640,11 @@
                      $(this).parent().find("ul:first").css("height", "auto");
                      var curHeight = $(this).parent().find("ul:first").height();
                      $(this).parent().find("ul:first").css("height", "0");
-                     console.log("Cur: " + curHeight);
-                     console.log("CutotHeigr: " + totalHeight);
                      
                      $(this).parent().find("ul:first").animate({
                          'height': curHeight
                      }, 300, 'easeOutQuint', function() {
                         var newMainMenuHeight = $('#mainmenu')[0].scrollHeight; 
-                        console.log("Nova altura do mainmenu: " + newMainMenuHeight);
                         $('#mainmenu').css("height", h + curHeight + totalHeight);
                         totalHeight = curHeight + totalHeight;
                     });
@@ -634,7 +666,6 @@
              $(this).data('iteration', iteration);console.log("selecionado main menu");
          }); 
          jQuery("#mainmenu > li > ul > li > span").on("click", function() {
-            console.log("selecionado main menu");
              var iteration = $(this).data('iteration') || 1;
              switch (iteration) {
                  case 1:

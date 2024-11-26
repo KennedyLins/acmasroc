@@ -49,7 +49,7 @@
     </div>
 </section>
 
-<section id="missao" style=" background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
+<section id="visao" style=" background-color: rgb(167,177,181);" data-bgcolor="rgb(167,177,181)">
     <div class="container">
         <div class="row align-items-center">
             <!-- Mission Text Section -->
@@ -80,7 +80,7 @@
     </div>
 </section>
 
-<section id="visao" style="padding: 150px 0; background: url({{ asset('assets/images/news.gif') }}) center center / cover no-repeat;" class="text-light">
+<section id="missao" style="padding: 150px 0; background: url({{ asset('assets/images/news.gif') }}) center center / cover no-repeat;" class="text-light">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
