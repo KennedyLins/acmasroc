@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\LogoController;
 
 Route::get('/', [MenuController::class,'home'])->name('site.home');
 Route::get('/quemSomos', [MenuController::class,'quemsomos'])->name('site.home.quemsomos');
@@ -31,14 +32,14 @@ Route::group(['prefix' => 'servicos'], function () {
 });
 
 
-
-
 Route::group(['prefix' => 'contact'], function () {
     Route::get('/', [MenuController::class,'contact'])->name('site.contact');
 });
 
-// Route::get('/contact', function () {
-//     return view('site.contact');
-// });
+
+Route::get('/logo',[LogoController::class,'index']);
 
 
+Route::get('/clear-cache', function() {
+    \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+});

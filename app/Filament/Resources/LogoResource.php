@@ -21,7 +21,6 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 
 
-
 class LogoResource extends Resource
 {
     protected static ?string $model = Logo::class;

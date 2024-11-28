@@ -13,7 +13,7 @@ class LogoController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -21,7 +21,7 @@ class LogoController extends Controller
      */
     public function create()
     {
-        //
+        return view();
     }
 
     /**
@@ -37,7 +37,7 @@ class LogoController extends Controller
      */
     public function show(Logo $logo)
     {
-        //
+        
     }
 
     /**

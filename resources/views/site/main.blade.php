@@ -198,7 +198,7 @@
                             <!-- logo begin -->
                             <a href="{{  url('/') }}">
                                 <img alt="" class="logo" src="{{asset('assets/images/logo_asroc.png')}}" />
-                                <img alt="" class="logo-2" src="{{asset('assets/images/logo_asroc.png')}}" />
+                               <!-- <img alt="" class="logo-2" src="{{asset('assets/images/logo_asroc.png')}}" /> -->
                             </a>
                             <!-- logo close -->
                         </div>
@@ -235,8 +235,6 @@
                             <!-- mainmenu close -->
                         </div>
                         <span id="menu-btn" class="d-lg-none"></span>
-                       
-
                     </div>
                 </div>
             </div>
